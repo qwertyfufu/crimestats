@@ -1,0 +1,18 @@
+CrimeStats USA
+Copyright 2026 qwertyfufu
+
+This product includes software developed for CrimeStats USA
+(https://github.com/qwertyfufu/crimestats), licensed under the Apache
+License, Version 2.0 (see LICENSE).
+
+Names: "CrimeStats" and "CrimeStats USA" name this project. As section 6 of
+the License says, the License grants no permission to use them, except to
+describe where the software came from. A copy or a data source run by someone
+else must not present itself, or its data, as the official CrimeStats.
+
+Data: data/crimestats-data.json is compiled from public sources: the FBI
+Crime Data Explorer, the U.S. Census Bureau, the Bureau of Labor Statistics,
+the CDC (VSRR and NCHS), U.S. Immigration and Customs Enforcement, the USDA
+Food and Nutrition Service, and Planned Parenthood's health-center directory.
+Works of the U.S. federal government are not subject to copyright in the
+United States.

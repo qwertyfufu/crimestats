@@ -66,6 +66,14 @@ shown as the official CrimeStats data.
 - **Signing** is only used by the official source, so that the app can recognise
   it. Leave `CRIMESTATS_SIGNING_KEY` unset. Your data works without it.
 
+## Licence
+
+The kit is free software under the Apache License 2.0 (`LICENSE`, `NOTICE`):
+you may use, change and share it, keeping those two files with it. The
+licence does not cover the names "CrimeStats" and "CrimeStats USA"; your
+source must not present itself as the official CrimeStats data, and the app
+always labels it with its own address.
+
 ## What is in the kit
 
 | Path | What it is |
@@ -76,3 +84,4 @@ shown as the official CrimeStats data.
 | `job/src/` | The base data and the validation rules the app itself uses |
 | `data/crimestats-data.json` | The published file. The kit starts with a copy of the official data |
 | `refresh-data.yml` | The weekly job (goes in `.github/workflows/`) |
+| `LICENSE`, `NOTICE` | The Apache License 2.0 and the project's notice; keep them with the files |

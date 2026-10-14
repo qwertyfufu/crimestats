@@ -53,3 +53,12 @@ it.
 
 Use the **Wrong or outdated figure** template. Say which place, which number,
 and what source you are comparing it against.
+
+## Licence
+
+The data job, its scripts and this repository's contents are licensed under
+the [Apache License 2.0](LICENSE); see also [NOTICE](NOTICE). The licence does
+not cover the names "CrimeStats" and "CrimeStats USA" (section 6), so a copy or
+another data source must not present itself as the official CrimeStats. The
+app's own code is not published yet; when it is, it will move here under the
+same licence.
