@@ -1,0 +1,63 @@
+{
+  "lastRun": "2026-10-14T07:08:14.286Z",
+  "publishedThisRun": true,
+  "signed": true,
+  "dataUpdated": "2026-10-14",
+  "generation": "2026-10-14-f474fd",
+  "sources": {
+    "BLS": {
+      "status": "ok",
+      "attempted": "2026-10-14",
+      "retrieved": "2026-10-14",
+      "period": "August 2026"
+    },
+    "CDC": {
+      "status": "ok",
+      "attempted": "2026-10-14",
+      "retrieved": "2026-10-14",
+      "period": "12 months ending Apr 2026"
+    },
+    "NCHS": {
+      "status": "ok",
+      "attempted": "2026-10-14",
+      "retrieved": "2026-10-14",
+      "period": "2025 Q2"
+    },
+    "Census": {
+      "status": "ok",
+      "attempted": "2026-10-14",
+      "retrieved": "2026-10-14",
+      "period": "ACS 2024"
+    },
+    "FBI": {
+      "status": "ok",
+      "attempted": "2026-10-14",
+      "retrieved": "2026-10-14",
+      "period": "FBI 2025"
+    },
+    "CPI": {
+      "status": "ok",
+      "attempted": "2026-10-14",
+      "retrieved": "2026-10-14",
+      "period": "CPI-U 2018–2024"
+    },
+    "PP": {
+      "status": "ok",
+      "attempted": "2026-10-14",
+      "retrieved": "2026-10-14",
+      "period": "October 2026"
+    },
+    "ICE": {
+      "status": "ok",
+      "attempted": "2026-10-14",
+      "retrieved": "2026-10-14",
+      "period": "FY2026, data to Jul 9, 2026"
+    },
+    "SNAP": {
+      "status": "ok",
+      "attempted": "2026-10-14",
+      "retrieved": "2026-10-14",
+      "period": "FY2025"
+    }
+  }
+}
