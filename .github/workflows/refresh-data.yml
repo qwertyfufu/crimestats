@@ -1,0 +1,48 @@
+# Refreshes the CrimeStats figures from the agencies every Monday and
+# publishes data/crimestats-data.json. Runs on GitHub's computers; no API key
+# is needed. Start it by hand from the Actions tab with "Run workflow".
+name: Refresh data
+
+on:
+  schedule:
+    - cron: '17 6 * * 1'   # Mondays, 06:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write          # to commit the refreshed data file
+
+concurrency:
+  group: refresh-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # Every figure is checked before anything is written. A source that
+      # fails keeps its previous values; if the checks refuse the result,
+      # nothing is published this week and the status file says why.
+      - name: Refresh from the agencies
+        working-directory: job
+        env:
+          BLS_API_KEY: ${{ secrets.BLS_API_KEY }}
+        run: node scripts/refresh-data.mjs || echo "::warning::The refreshed data failed its checks; the published file is unchanged."
+
+      - name: Publish, sign and record the run
+        env:
+          CRIMESTATS_SIGNING_KEY: ${{ secrets.CRIMESTATS_SIGNING_KEY }}
+        run: node job/scripts/publish-data.mjs
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data job/src/live-baked.js
+          git commit -m "data: weekly refresh $(date -u +%F)" || echo "Nothing changed."
+          git push

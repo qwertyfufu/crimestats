@@ -10,6 +10,21 @@ source and year.
 yet. When it is published, it will move into this repository, so reports and
 code live in one place and nothing filed here is lost.
 
+## Data
+
+The app's figures are refreshed every Monday by the **Refresh data** job
+(`.github/workflows/refresh-data.yml`) on GitHub's computers, from the FBI,
+the Census Bureau, BLS, CDC, ICE, USDA and Planned Parenthood's directory.
+The result is published as `data/crimestats-data.json` and signed
+(`data/crimestats-data.json.sig`), so the app can tell the official file from
+any other. `data/status.json` shows when the job last ran and what each source
+did. Every figure is checked before it is published; a source that fails keeps
+its previous values.
+
+**Run your own copy** so the app keeps working without this repository:
+[RUN-YOUR-OWN.md](RUN-YOUR-OWN.md). The app labels any other source with its
+own address and never shows it as the official data.
+
 ## Reporting a crash or problem
 
 **From the app (preferred).**
