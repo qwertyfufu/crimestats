@@ -60,7 +60,7 @@ const OPTIONAL_NUMBERS = {
   ppCenters: (v) => Number.isInteger(v) && v >= 0 && v <= 1000,
   ppVirtual: (v) => Number.isInteger(v) && v >= 0 && v <= 100,
   iceDetained: (v) => Number.isInteger(v) && v >= 0 && v <= 1e6,
-  snapBenefits: inRange(0, 1e11)
+  snapBenefits: inRange(1e7, 1e11)   // the smallest state, Wyoming, is about $60M a year
 };
 
 const PERIOD = /^\d{4}-(0[1-9]|1[0-2])$/;
@@ -117,6 +117,9 @@ export function validateRecord(rec, { kind } = {}) {
       else if (v.length && rec[headline] !== v[v.length - 1]) bad(values, `must end on the ${headline} shown above it (${rec[headline]})`);
     }
     const p = rec[periods];
+    // A series without its periods draws nothing and skips the year-label
+    // check, so each needs the other (Argon F3).
+    if ((v !== undefined) !== (p !== undefined)) bad(v !== undefined ? periods : values, `must accompany ${v !== undefined ? values : periods}`);
     if (p !== undefined) {
       if (!Array.isArray(p) || !p.every(x => typeof x === 'string' && format.test(x))) bad(periods, `must be ${format === YEAR ? 'YYYY' : 'YYYY-MM'} strings`);
       else if (!Array.isArray(v) || p.length !== v.length) bad(periods, `must have one period per value (${p.length} vs ${Array.isArray(v) ? v.length : 'none'})`);
@@ -177,7 +180,10 @@ export function seriesVintageProblems(states, vintages = {}) {
 // ---- Metadata --------------------------------------------------------------
 // Metadata is rendered in the About page and the share stamp, so it is
 // sanitized field by field: only known keys of the right type survive.
-const META_STRINGS = ['unemploymentPeriod', 'overdosePeriod', 'nchsPeriod', 'ppPeriod', 'icePeriod', 'snapPeriod', 'updated', 'attempted', 'generation', 'sources', 'incomeVintage'];
+const META_STRINGS = ['unemploymentPeriod', 'overdosePeriod', 'nchsPeriod', 'ppPeriod', 'icePeriod', 'snapPeriod', 'cityIncomePeriod', 'updated', 'attempted', 'generation', 'sources', 'incomeVintage'];
+// Dates the update check compares as text must really be YYYY-MM-DD.
+const META_DATES = new Set(['updated', 'attempted']);
+const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/;
 const STATUS = new Set(['ok', 'failed', 'skipped']);
 
 export function sanitizeMeta(meta) {
@@ -186,8 +192,8 @@ export function sanitizeMeta(meta) {
   if (!isPlainObject(meta)) return { meta: out, problems: ['meta is not an object'] };
   for (const k of META_STRINGS) {
     if (meta[k] === undefined) continue;
-    if (typeof meta[k] === 'string' && meta[k].length < 200) out[k] = meta[k];
-    else problems.push(`meta.${k}: must be a short string`);
+    if (typeof meta[k] === 'string' && meta[k].length < 200 && (!META_DATES.has(k) || ISO_DATE.test(meta[k]))) out[k] = meta[k];
+    else problems.push(`meta.${k}: must be ${META_DATES.has(k) ? 'a YYYY-MM-DD date' : 'a short string'}`);
   }
   if (meta.staleSources !== undefined) {
     if (Array.isArray(meta.staleSources) && meta.staleSources.every(x => typeof x === 'string')) out.staleSources = meta.staleSources;

@@ -1,5 +1,7 @@
 #!/usr/bin/env node
-// Runs after job/scripts/refresh-data.mjs in the scheduled job (and by hand).
+// Runs as job/scripts/publish-data.mjs inside the data kit or the public
+// repository (scripts/make-kit.mjs puts it there; this copy in kit/ is the
+// template and is not run from here). Runs after refresh-data.mjs.
 // Copies the refreshed dataset into data/, signs it when a signing key is set,
 // and always writes data/status.json: when the job last ran and what each
 // source did. That file changes every run, which also keeps GitHub from
@@ -27,6 +29,9 @@ if (existsSync(fresh)) {
     const sig = sign('sha256', bytes, { key: createPrivateKey(pem), dsaEncoding: 'ieee-p1363' });
     writeFileSync(join(out, 'crimestats-data.json.sig'), sig.toString('base64') + '\n');
   } else rmSync(join(out, 'crimestats-data.json.sig'), { force: true });
+  // Consumed: a later run whose refresh fails must not republish this file
+  // as new (Argon F5; it matters when the kit is run on a computer).
+  rmSync(fresh, { force: true });
   published = true;
 }
 const current = existsSync(join(out, 'crimestats-data.json')) ? JSON.parse(readFileSync(join(out, 'crimestats-data.json'), 'utf8')) : null;

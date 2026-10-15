@@ -425,13 +425,24 @@ export function parseICEFacilities(grid, { sheetName = '' } = {}) {
   const dated = grid.slice(0, h).map(r => String(r.A || '')).find(a => /Data Source/i.test(a))?.match(/(\d{2})\/(\d{2})\/(\d{4})/);
   const fy = String(sheetName).match(/FY\s?(\d{2})\b/)?.[1];
   if (!dated || !fy) throw new Error('ICE: could not read the fiscal year or data date');
-  const byState = {};
+  // Facilities outside the 51 are counted by ICE but not shown by the app.
+  const known = new Set([...STATE_IDS, 'PR', 'GU', 'MP', 'VI', 'AS']);
+  const byState = {}, unknown = new Set();
   for (const r of grid.slice(h + 1)) {
-    const st = String(r.D || '').trim();
-    if (!String(r.A || '').trim() || !/^[A-Z]{2}$/.test(st)) continue;
-    const adp = levels.reduce((a, k) => a + (Number(r[k]) || 0), 0);
+    const name = String(r.A || '').trim(), st = String(r.D || '').trim();
+    if (!name || !st) continue;
+    if (!known.has(st)) { unknown.add(st); continue; }
+    // A text cell such as "1,050" must not count as nothing (Argon F7).
+    const adp = levels.reduce((a, k) => {
+      const raw = String(r[k] ?? '').trim();
+      if (!raw) return a;
+      const n = Number(raw.replace(/,/g, ''));
+      if (!Number.isFinite(n)) throw new Error(`ICE: unreadable population "${raw}" at ${name}`);
+      return a + n;
+    }, 0);
     byState[st] = (byState[st] || 0) + adp;
   }
+  if (unknown.size) throw new Error(`ICE: unknown state code ${[...unknown].slice(0, 5).join(', ')}; the sheet may have changed`);
   const states = Object.fromEntries(STATE_IDS.map(id => [id, { iceDetained: Math.round(byState[id] || 0) }]));
   const total = Object.values(states).reduce((a, s) => a + s.iceDetained, 0);
   if (total < 1000 || total > 300000) throw new Error(`ICE: ${total} people held in total is implausible`);
@@ -448,25 +459,57 @@ export function parseICEFacilities(grid, { sheetName = '' } = {}) {
  * accepted. `sheets` maps sheet name -> grid.
  */
 export function parseSNAPYear(sheets, { fy }) {
-  const cost = {}, months = {};
+  const cost = {}, months = {}, sum = {};
+  const num = (v) => Number(String(v ?? '').replace(/,/g, ''));
   for (const grid of Object.values(sheets)) {
     let cur = null;
     for (const r of grid) {
       const a = String(r.A || '').trim();
-      if (STATE_BY_NAME[a]) { cur = STATE_BY_NAME[a]; months[cur] = 0; continue; }
+      if (STATE_BY_NAME[a]) {
+        // A second block for a state (a summary or footnote row) is ambiguous: refuse it.
+        if (months[STATE_BY_NAME[a]] !== undefined) throw new Error(`SNAP FY${fy}: ${a} appears twice`);
+        cur = STATE_BY_NAME[a]; months[cur] = 0; sum[cur] = 0; continue;
+      }
       if (!cur) continue;
       // FNS lists all twelve months from the start; unreported ones are blank.
-      if (/^[A-Z][a-z]{2} \d{4}$/.test(a) && Number(r.D) > 0) months[cur]++;
-      else if (a === 'Total') { cost[cur] = Number(r.D); cur = null; }
+      if (/^[A-Z][a-z]{2} \d{4}$/.test(a) && num(r.D) > 0) { months[cur]++; sum[cur] += num(r.D); }
+      else if (a === 'Total') { cost[cur] = num(r.D); cur = null; }
     }
   }
   const missing = STATE_IDS.filter(id => !Number.isFinite(cost[id]) || cost[id] <= 0);
   if (missing.length) throw new Error(`SNAP FY${fy}: no annual total for ${missing.slice(0, 8).join(',')}`);
   const short = STATE_IDS.filter(id => months[id] !== 12);
   if (short.length) throw new Error(`SNAP FY${fy}: not a complete year (${short[0]} has ${months[short[0]]} months)`);
+  // The Total row must be the sum of the months, or a column has moved.
+  const off = STATE_IDS.filter(id => Number.isFinite(cost[id]) && Math.abs(cost[id] - sum[id]) > 1000);
+  if (off.length) throw new Error(`SNAP FY${fy}: the Total for ${off[0]} is not the sum of its months`);
   const states = Object.fromEntries(STATE_IDS.map(id => [id, { snapBenefits: Math.round(cost[id]) }]));
   const label = `FY${fy}`;
   return { states, meta: { snapPeriod: label }, vintages: { snapBenefits: `USDA ${label}` }, period: label };
+}
+
+// City median household income, Census ACS 1-year table B19013 at place level
+// (Argon F8: the city incomes were hand-entered with no source). `rows` is the
+// data.census.gov table for all places; the 12 cities are picked by GEO_ID.
+export const PLACE_GEO = {
+  NYC: '1600000US3651000', LAX: '1600000US0644000', CHI: '1600000US1714000', HOU: '1600000US4835000',
+  PHX: '1600000US0455000', PHL: '1600000US4260000', FTW: '1600000US4827000', SEA: '1600000US5363000',
+  DEN: '1600000US0820000', OKC: '1600000US4055000', DET: '1600000US2622000', MEM: '1600000US4748000'
+};
+export function parseACSCityIncome(rows, { year }) {
+  if (!Array.isArray(rows) || rows.length < 2) throw new Error(`Census cities ${year}: non-tabular response`);
+  const head = rows[0], iE = head.indexOf('B19013_001E'), iG = head.indexOf('GEO_ID');
+  if (iE < 0 || iG < 0) throw new Error(`Census cities ${year}: income or geography column missing`);
+  const metros = {};
+  for (const [id, geo] of Object.entries(PLACE_GEO)) {
+    const hits = rows.filter(r => r[iG] === geo);
+    if (hits.length !== 1) throw new Error(`Census cities ${year}: ${hits.length ? 'two rows' : 'no row'} for ${id}`);
+    const v = parseInt(hits[0][iE], 10);
+    if (!(v > 10000 && v < 500000)) throw new Error(`Census cities ${year}: implausible income for ${id}`);
+    metros[id] = { income: v };
+  }
+  const label = `ACS ${year}`;
+  return { metros, meta: { cityIncomePeriod: label }, vintages: { cityIncome: label }, period: label };
 }
 
 const LEGACY_RECORD_FIELDS = ['confidence'];

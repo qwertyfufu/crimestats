@@ -33,7 +33,7 @@ import { dirname, join } from 'path';
 import { METRO_ROWS, STATE_ROWS } from '../src/data.js';
 import {
   parseBLS, parseCDC, parseNCHS, parseACSIncome, parseFBIEstimates, parseCPI, HISTORY_YEARS, refreshAndCommit,
-  parsePPDirectory, parseICEFacilities, parseSNAPYear, ppSlug
+  parsePPDirectory, parseICEFacilities, parseSNAPYear, ppSlug, parseACSCityIncome
 } from './refresh-core.mjs';
 import { readFirstSheet, readSheetGrid, sheetNames, unzip } from './xlsx-lite.mjs';
 
@@ -229,6 +229,19 @@ async function snap() {
   throw lastErr || new Error('SNAP archive has no fiscal-year workbooks');
 }
 
+// The 12 cities' median household income: the newest ACS 1-year release,
+// all places in one request (about 50 KB), the same keyless route as states.
+async function cityIncome() {
+  for (const y of [year - 1, year - 2, year - 3]) {
+    const res = await fetch(`https://data.census.gov/api/access/data/table?id=ACSDT1Y${y}.B19013&g=010XX00US$1600000`);
+    const json = await res.json().catch(() => null);
+    if (res.status === 400 && /no table/i.test(json?.description || '')) continue;
+    if (!res.ok || !Array.isArray(json?.response?.data)) throw new Error(`data.census.gov cities ${y}: HTTP ${res.status}`);
+    return parseACSCityIncome(json.response.data, { year: y });
+  }
+  throw new Error('no ACS 1-year place table in the last three years');
+}
+
 function writeSnapshot(today) {
   const fx = (name) => join(ROOT, 'tests/fixtures', name);
   if (raw.fbi) {
@@ -271,7 +284,8 @@ const { outputs, status, problems, written } = await refreshAndCommit({
   sources: [
     { name: 'BLS', run: bls }, { name: 'CDC', run: cdc }, { name: 'NCHS', run: nchs },
     { name: 'Census', run: census }, { name: 'FBI', run: fbi }, { name: 'CPI', run: cpi },
-    { name: 'PP', run: pp }, { name: 'ICE', run: ice }, { name: 'SNAP', run: snap }
+    { name: 'PP', run: pp }, { name: 'ICE', run: ice }, { name: 'SNAP', run: snap },
+    { name: 'Cities', run: cityIncome }
   ],
   previous,
   // Never let a key reach the stored failure reasons (see runRefresh).
