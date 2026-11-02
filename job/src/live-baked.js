@@ -4,16 +4,14 @@ export default {
   "meta": {
     "unemploymentPeriod": "September 2026",
     "overdosePeriod": "12 months ending May 2026",
-    "updated": "2026-10-26",
+    "updated": "2026-11-02",
     "nchsPeriod": "2025 Q2",
     "seriesGaps": {
       "unemployment": [
         "2025-10"
       ],
       "overdose": [],
-      "income": [
-        "2020"
-      ],
+      "income": [],
       "violentCrime": []
     },
     "overdoseCompleteness": {
@@ -23,75 +21,75 @@ export default {
     "sourceStatus": {
       "BLS": {
         "status": "ok",
-        "attempted": "2026-10-26",
-        "retrieved": "2026-10-26",
+        "attempted": "2026-11-02",
+        "retrieved": "2026-11-02",
         "period": "September 2026"
       },
       "CDC": {
         "status": "ok",
-        "attempted": "2026-10-26",
-        "retrieved": "2026-10-26",
+        "attempted": "2026-11-02",
+        "retrieved": "2026-11-02",
         "period": "12 months ending May 2026"
       },
       "NCHS": {
         "status": "ok",
-        "attempted": "2026-10-26",
-        "retrieved": "2026-10-26",
+        "attempted": "2026-11-02",
+        "retrieved": "2026-11-02",
         "period": "2025 Q2"
       },
       "Census": {
         "status": "ok",
-        "attempted": "2026-10-26",
-        "retrieved": "2026-10-26",
-        "period": "ACS 2024"
+        "attempted": "2026-11-02",
+        "retrieved": "2026-11-02",
+        "period": "ACS 2025"
       },
       "FBI": {
         "status": "ok",
-        "attempted": "2026-10-26",
-        "retrieved": "2026-10-26",
+        "attempted": "2026-11-02",
+        "retrieved": "2026-11-02",
         "period": "FBI 2025"
       },
       "CPI": {
         "status": "ok",
-        "attempted": "2026-10-26",
-        "retrieved": "2026-10-26",
+        "attempted": "2026-11-02",
+        "retrieved": "2026-11-02",
         "period": "CPI-U 2018–2024"
       },
       "PP": {
         "status": "ok",
-        "attempted": "2026-10-26",
-        "retrieved": "2026-10-26",
-        "period": "October 2026"
+        "attempted": "2026-11-02",
+        "retrieved": "2026-11-02",
+        "period": "November 2026"
       },
       "ICE": {
         "status": "ok",
-        "attempted": "2026-10-26",
-        "retrieved": "2026-10-26",
+        "attempted": "2026-11-02",
+        "retrieved": "2026-11-02",
         "period": "FY2026, data to Jul 9, 2026"
       },
       "SNAP": {
         "status": "ok",
-        "attempted": "2026-10-26",
-        "retrieved": "2026-10-26",
+        "attempted": "2026-11-02",
+        "retrieved": "2026-11-02",
         "period": "FY2025"
       },
       "Cities": {
         "status": "ok",
-        "attempted": "2026-10-26",
-        "retrieved": "2026-10-26",
-        "period": "ACS 2024"
+        "attempted": "2026-11-02",
+        "retrieved": "2026-11-02",
+        "period": "ACS 2025"
       }
     },
-    "attempted": "2026-10-26",
-    "generation": "2026-10-26-5fd91a",
+    "attempted": "2026-11-02",
+    "generation": "2026-11-02-63b785",
     "vintages": {
-      "income": "ACS 2024",
+      "income": "ACS 2025",
       "violentCrime": "FBI 2025",
       "propertyCrime": "FBI 2025",
       "iceDetained": "ICE FY2026, data to Jul 9, 2026",
       "snapBenefits": "USDA FY2025",
-      "ppCenters": "Planned Parenthood directory, October 2026",
-      "cityIncome": "ACS 2024"
+      "ppCenters": "Planned Parenthood directory, November 2026",
+      "cityIncome": "ACS 2025"
     },
     "cpiAnnual": {
       "2018": 251.107,
@@ -104,8 +102,8 @@ export default {
     },
     "icePeriod": "FY2026, data to Jul 9, 2026",
     "snapPeriod": "FY2025",
-    "ppPeriod": "October 2026",
-    "cityIncomePeriod": "ACS 2024"
+    "ppPeriod": "November 2026",
+    "cityIncomePeriod": "ACS 2025"
   },
   "states": {
     "AL": {
@@ -224,20 +222,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 66659,
+      "income": 67663,
       "incomeSeries": [
-        51734,
         53913,
         59674,
         62212,
-        66659
+        66659,
+        67663
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 348,
       "propertyCrime": 1462,
@@ -378,20 +376,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 95665,
+      "income": 95220,
       "incomeSeries": [
-        75463,
         77845,
         88121,
         86631,
-        95665
+        95665,
+        95220
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 729,
       "propertyCrime": 1893,
@@ -532,20 +530,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 81486,
+      "income": 82940,
       "incomeSeries": [
-        62055,
         69056,
         74568,
         77315,
-        81486
+        81486,
+        82940
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 378,
       "propertyCrime": 1514,
@@ -686,20 +684,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 62106,
+      "income": 65588,
       "incomeSeries": [
-        48952,
         52528,
         55432,
         58700,
-        62106
+        62106,
+        65588
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 532,
       "propertyCrime": 1645,
@@ -840,20 +838,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 100149,
+      "income": 102159,
       "incomeSeries": [
-        80440,
         84907,
         91551,
         95521,
-        100149
+        100149,
+        102159
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 433,
       "propertyCrime": 1792,
@@ -994,20 +992,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 97113,
+      "income": 99729,
       "incomeSeries": [
-        77127,
         82254,
         89302,
         92911,
-        97113
+        97113,
+        99729
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 422,
       "propertyCrime": 2144,
@@ -1148,20 +1146,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 96049,
+      "income": 100056,
       "incomeSeries": [
-        78833,
         83771,
         88429,
         91665,
-        96049
+        96049,
+        100056
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 110,
       "propertyCrime": 1146,
@@ -1302,20 +1300,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 87534,
+      "income": 92520,
       "incomeSeries": [
-        70176,
         71091,
         82174,
         81361,
-        87534
+        87534,
+        92520
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 347,
       "propertyCrime": 1559,
@@ -1456,20 +1454,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 109707,
+      "income": 109505,
       "incomeSeries": [
-        92266,
         90088,
         101027,
         108210,
-        109707
+        109707,
+        109505
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 803,
       "propertyCrime": 3132,
@@ -1611,20 +1609,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 77735,
+      "income": 80846,
       "incomeSeries": [
-        59227,
         63062,
         69303,
         73311,
-        77735
+        77735,
+        80846
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 261,
       "propertyCrime": 1176,
@@ -1766,20 +1764,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 79991,
+      "income": 81847,
       "incomeSeries": [
-        61980,
         66559,
         72837,
         74632,
-        79991
+        79991,
+        81847
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 297,
       "propertyCrime": 1409,
@@ -1920,20 +1918,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 100745,
+      "income": 105013,
       "incomeSeries": [
-        83102,
         84857,
         92458,
         95322,
-        100745
+        100745,
+        105013
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 205,
       "propertyCrime": 1604,
@@ -2074,20 +2072,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 81166,
+      "income": 84234,
       "incomeSeries": [
-        60999,
         66474,
         72785,
         74942,
-        81166
+        81166,
+        84234
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 217,
       "propertyCrime": 605,
@@ -2228,20 +2226,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 83211,
+      "income": 86676,
       "incomeSeries": [
-        69187,
         72205,
         76708,
         80306,
-        83211
+        83211,
+        86676
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 251,
       "propertyCrime": 1507,
@@ -2382,20 +2380,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 71959,
+      "income": 74516,
       "incomeSeries": [
-        57603,
         62743,
         66785,
         69477,
-        71959
+        71959,
+        74516
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 254,
       "propertyCrime": 1052,
@@ -2536,20 +2534,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 75501,
+      "income": 76483,
       "incomeSeries": [
-        61691,
         65600,
         69588,
         71433,
-        75501
+        75501,
+        76483
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 234,
       "propertyCrime": 1172,
@@ -2690,20 +2688,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 75514,
+      "income": 77824,
       "incomeSeries": [
-        62087,
         64124,
         68925,
         70333,
-        75514
+        75514,
+        77824
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 457,
       "propertyCrime": 1796,
@@ -2844,20 +2842,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 64526,
+      "income": 66447,
       "incomeSeries": [
-        52295,
         55573,
         59341,
         61118,
-        64526
+        64526,
+        66447
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 212,
       "propertyCrime": 1262,
@@ -2998,20 +2996,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 60986,
+      "income": 65139,
       "incomeSeries": [
-        51073,
         52087,
         55416,
         58229,
-        60986
+        60986,
+        65139
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 515,
       "propertyCrime": 1966,
@@ -3152,20 +3150,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 76442,
+      "income": 81760,
       "incomeSeries": [
-        58924,
         64767,
         69543,
         73733,
-        76442
+        76442,
+        81760
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 93,
       "propertyCrime": 939,
@@ -3306,20 +3304,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 102905,
+      "income": 107700,
       "incomeSeries": [
-        86738,
         90203,
         94991,
         98678,
-        102905
+        102905,
+        107700
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 358,
       "propertyCrime": 1820,
@@ -3460,20 +3458,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 104828,
+      "income": 106539,
       "incomeSeries": [
-        85843,
         89645,
         94488,
         99858,
-        104828
+        104828,
+        106539
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 303,
       "propertyCrime": 1031,
@@ -3614,20 +3612,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 72389,
+      "income": 75832,
       "incomeSeries": [
-        59584,
         63498,
         66986,
         69183,
-        72389
+        72389,
+        75832
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 416,
       "propertyCrime": 1259,
@@ -3768,20 +3766,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 87117,
+      "income": 92297,
       "incomeSeries": [
-        74593,
         77720,
         82338,
         85086,
-        87117
+        87117,
+        92297
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 224,
       "propertyCrime": 1411,
@@ -3922,20 +3920,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 59127,
+      "income": 59346,
       "incomeSeries": [
-        45792,
         48716,
         52719,
         54203,
-        59127
+        59127,
+        59346
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 227,
       "propertyCrime": 1264,
@@ -4076,20 +4074,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 71589,
+      "income": 75485,
       "incomeSeries": [
-        57409,
         61847,
         64811,
         68545,
-        71589
+        71589,
+        75485
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 418,
       "propertyCrime": 1644,
@@ -4230,20 +4228,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 75340,
+      "income": 77099,
       "incomeSeries": [
-        57153,
         63249,
         67631,
         70804,
-        75340
+        75340,
+        77099
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 419,
       "propertyCrime": 1449,
@@ -4384,20 +4382,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 76376,
+      "income": 81614,
       "incomeSeries": [
-        63229,
         66817,
         69597,
         74590,
-        76376
+        76376,
+        81614
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 218,
       "propertyCrime": 1379,
@@ -4538,20 +4536,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 81134,
+      "income": 85198,
       "incomeSeries": [
-        63276,
         66274,
         72333,
         76364,
-        81134
+        81134,
+        85198
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 379,
       "propertyCrime": 1996,
@@ -4692,20 +4690,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 99782,
+      "income": 106759,
       "incomeSeries": [
-        77933,
         88465,
         89992,
         96838,
-        99782
+        99782,
+        106759
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 118,
       "propertyCrime": 818,
@@ -4846,20 +4844,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 104294,
+      "income": 107797,
       "incomeSeries": [
-        85751,
         89296,
         96346,
         99781,
-        104294
+        104294,
+        107797
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 194,
       "propertyCrime": 1250,
@@ -5000,20 +4998,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 67816,
+      "income": 70342,
       "incomeSeries": [
-        51945,
         53992,
         59726,
         62268,
-        67816
+        67816,
+        70342
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 622,
       "propertyCrime": 2240,
@@ -5154,20 +5152,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 85820,
+      "income": 89210,
       "incomeSeries": [
-        72108,
         74314,
         79557,
         82095,
-        85820
+        85820,
+        89210
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 368,
       "propertyCrime": 1575,
@@ -5308,20 +5306,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 73958,
+      "income": 77638,
       "incomeSeries": [
-        57341,
         61972,
         67481,
         70804,
-        73958
+        73958,
+        77638
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 330,
       "propertyCrime": 1780,
@@ -5462,20 +5460,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 77871,
+      "income": 81545,
       "incomeSeries": [
-        64577,
         66519,
         71970,
         76525,
-        77871
+        77871,
+        81545
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 238,
       "propertyCrime": 1458,
@@ -5617,20 +5615,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 72212,
+      "income": 74804,
       "incomeSeries": [
-        58642,
         62262,
         65720,
         67769,
-        72212
+        72212,
+        74804
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 276,
       "propertyCrime": 1429,
@@ -5771,20 +5769,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 66148,
+      "income": 68441,
       "incomeSeries": [
-        54449,
         55826,
         59673,
         62138,
-        66148
+        66148,
+        68441
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 408,
       "propertyCrime": 1814,
@@ -5925,20 +5923,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 85220,
+      "income": 86953,
       "incomeSeries": [
-        67058,
         71562,
         75657,
         80160,
-        85220
+        85220,
+        86953
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 311,
       "propertyCrime": 2118,
@@ -6079,20 +6077,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 77545,
+      "income": 81473,
       "incomeSeries": [
-        63463,
         68957,
         71798,
         73824,
-        77545
+        77545,
+        81473
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 227,
       "propertyCrime": 1324,
@@ -6233,20 +6231,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 83504,
+      "income": 91039,
       "incomeSeries": [
-        71169,
         74008,
         81854,
         84972,
-        83504
+        83504,
+        91039
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 144,
       "propertyCrime": 911,
@@ -6387,20 +6385,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 72350,
+      "income": 73672,
       "incomeSeries": [
-        56227,
         59318,
         64115,
         67804,
-        72350
+        72350,
+        73672
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 388,
       "propertyCrime": 1676,
@@ -6541,20 +6539,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 76881,
+      "income": 80506,
       "incomeSeries": [
-        59533,
         66143,
         69728,
         71810,
-        76881
+        76881,
+        80506
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 307,
       "propertyCrime": 1312,
@@ -6695,20 +6693,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 71997,
+      "income": 75875,
       "incomeSeries": [
-        56071,
         59695,
         65254,
         67631,
-        71997
+        71997,
+        75875
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 492,
       "propertyCrime": 1637,
@@ -6849,20 +6847,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 79721,
+      "income": 82625,
       "incomeSeries": [
-        64034,
         66963,
         72284,
         75780,
-        79721
+        79721,
+        82625
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 345,
       "propertyCrime": 1786,
@@ -7003,20 +7001,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 96658,
+      "income": 99311,
       "incomeSeries": [
-        75780,
         79449,
         89168,
         93421,
-        96658
+        96658,
+        99311
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 236,
       "propertyCrime": 1415,
@@ -7157,20 +7155,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 82730,
+      "income": 86018,
       "incomeSeries": [
-        63001,
         72431,
         73991,
         81211,
-        82730
+        82730,
+        86018
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 214,
       "propertyCrime": 1419,
@@ -7311,20 +7309,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 92090,
+      "income": 99322,
       "incomeSeries": [
-        76456,
         80963,
         85873,
         89931,
-        92090
+        92090,
+        99322
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 206,
       "propertyCrime": 1353,
@@ -7465,20 +7463,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 99389,
+      "income": 101946,
       "incomeSeries": [
-        78687,
         84247,
         91306,
         94605,
-        99389
+        99389,
+        101946
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 284,
       "propertyCrime": 1975,
@@ -7619,20 +7617,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 60798,
+      "income": 61340,
       "incomeSeries": [
-        48850,
         51248,
         54329,
         55948,
-        60798
+        60798,
+        61340
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 242,
       "propertyCrime": 1053,
@@ -7773,20 +7771,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 77488,
+      "income": 80213,
       "incomeSeries": [
-        64168,
         67125,
         70996,
         74631,
-        77488
+        77488,
+        80213
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 240,
       "propertyCrime": 1017,
@@ -7927,20 +7925,20 @@ export default {
         "2026-04",
         "2026-05"
       ],
-      "income": 75532,
+      "income": 80894,
       "incomeSeries": [
-        65003,
         65204,
         70042,
         72415,
-        75532
+        75532,
+        80894
       ],
       "incomePeriods": [
-        "2019",
         "2021",
         "2022",
         "2023",
-        "2024"
+        "2024",
+        "2025"
       ],
       "violentCrime": 180,
       "propertyCrime": 1038,
@@ -7969,40 +7967,40 @@ export default {
   "metros": {
     "NYC": {
       "overdoseRate": 22,
-      "income": 81228
+      "income": 83778
     },
     "LAX": {
-      "income": 82263
+      "income": 83226
     },
     "CHI": {
-      "income": 80613
+      "income": 82429
     },
     "HOU": {
-      "income": 64361
+      "income": 69942
     },
     "PHX": {
-      "income": 85246
+      "income": 84959
     },
     "PHL": {
-      "income": 60521
+      "income": 67398
     },
     "FTW": {
-      "income": 82503
+      "income": 85437
     },
     "SEA": {
-      "income": 118745
+      "income": 122809
     },
     "DEN": {
-      "income": 92504
+      "income": 93850
     },
     "OKC": {
-      "income": 70040
+      "income": 71231
     },
     "DET": {
-      "income": 39209
+      "income": 40888
     },
     "MEM": {
-      "income": 52679
+      "income": 57750
     }
   }
 };

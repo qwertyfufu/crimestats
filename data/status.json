@@ -1,69 +1,69 @@
 {
-  "lastRun": "2026-10-26T06:58:57.268Z",
+  "lastRun": "2026-11-02T15:52:02.830Z",
   "publishedThisRun": true,
   "signed": true,
-  "dataUpdated": "2026-10-26",
-  "generation": "2026-10-26-5fd91a",
+  "dataUpdated": "2026-11-02",
+  "generation": "2026-11-02-63b785",
   "sources": {
     "BLS": {
       "status": "ok",
-      "attempted": "2026-10-26",
-      "retrieved": "2026-10-26",
+      "attempted": "2026-11-02",
+      "retrieved": "2026-11-02",
       "period": "September 2026"
     },
     "CDC": {
       "status": "ok",
-      "attempted": "2026-10-26",
-      "retrieved": "2026-10-26",
+      "attempted": "2026-11-02",
+      "retrieved": "2026-11-02",
       "period": "12 months ending May 2026"
     },
     "NCHS": {
       "status": "ok",
-      "attempted": "2026-10-26",
-      "retrieved": "2026-10-26",
+      "attempted": "2026-11-02",
+      "retrieved": "2026-11-02",
       "period": "2025 Q2"
     },
     "Census": {
       "status": "ok",
-      "attempted": "2026-10-26",
-      "retrieved": "2026-10-26",
-      "period": "ACS 2024"
+      "attempted": "2026-11-02",
+      "retrieved": "2026-11-02",
+      "period": "ACS 2025"
     },
     "FBI": {
       "status": "ok",
-      "attempted": "2026-10-26",
-      "retrieved": "2026-10-26",
+      "attempted": "2026-11-02",
+      "retrieved": "2026-11-02",
       "period": "FBI 2025"
     },
     "CPI": {
       "status": "ok",
-      "attempted": "2026-10-26",
-      "retrieved": "2026-10-26",
+      "attempted": "2026-11-02",
+      "retrieved": "2026-11-02",
       "period": "CPI-U 2018–2024"
     },
     "PP": {
       "status": "ok",
-      "attempted": "2026-10-26",
-      "retrieved": "2026-10-26",
-      "period": "October 2026"
+      "attempted": "2026-11-02",
+      "retrieved": "2026-11-02",
+      "period": "November 2026"
     },
     "ICE": {
       "status": "ok",
-      "attempted": "2026-10-26",
-      "retrieved": "2026-10-26",
+      "attempted": "2026-11-02",
+      "retrieved": "2026-11-02",
       "period": "FY2026, data to Jul 9, 2026"
     },
     "SNAP": {
       "status": "ok",
-      "attempted": "2026-10-26",
-      "retrieved": "2026-10-26",
+      "attempted": "2026-11-02",
+      "retrieved": "2026-11-02",
       "period": "FY2025"
     },
     "Cities": {
       "status": "ok",
-      "attempted": "2026-10-26",
-      "retrieved": "2026-10-26",
-      "period": "ACS 2024"
+      "attempted": "2026-11-02",
+      "retrieved": "2026-11-02",
+      "period": "ACS 2025"
     }
   }
 }
