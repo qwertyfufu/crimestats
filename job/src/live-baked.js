@@ -4,7 +4,7 @@ export default {
   "meta": {
     "unemploymentPeriod": "September 2026",
     "overdosePeriod": "12 months ending May 2026",
-    "updated": "2026-11-02",
+    "updated": "2026-11-09",
     "nchsPeriod": "2025 Q2",
     "seriesGaps": {
       "unemployment": [
@@ -21,67 +21,67 @@ export default {
     "sourceStatus": {
       "BLS": {
         "status": "ok",
-        "attempted": "2026-11-02",
-        "retrieved": "2026-11-02",
+        "attempted": "2026-11-09",
+        "retrieved": "2026-11-09",
         "period": "September 2026"
       },
       "CDC": {
         "status": "ok",
-        "attempted": "2026-11-02",
-        "retrieved": "2026-11-02",
+        "attempted": "2026-11-09",
+        "retrieved": "2026-11-09",
         "period": "12 months ending May 2026"
       },
       "NCHS": {
         "status": "ok",
-        "attempted": "2026-11-02",
-        "retrieved": "2026-11-02",
+        "attempted": "2026-11-09",
+        "retrieved": "2026-11-09",
         "period": "2025 Q2"
       },
       "Census": {
         "status": "ok",
-        "attempted": "2026-11-02",
-        "retrieved": "2026-11-02",
+        "attempted": "2026-11-09",
+        "retrieved": "2026-11-09",
         "period": "ACS 2025"
       },
       "FBI": {
         "status": "ok",
-        "attempted": "2026-11-02",
-        "retrieved": "2026-11-02",
+        "attempted": "2026-11-09",
+        "retrieved": "2026-11-09",
         "period": "FBI 2025"
       },
       "CPI": {
         "status": "ok",
-        "attempted": "2026-11-02",
-        "retrieved": "2026-11-02",
+        "attempted": "2026-11-09",
+        "retrieved": "2026-11-09",
         "period": "CPI-U 2018–2024"
       },
       "PP": {
         "status": "ok",
-        "attempted": "2026-11-02",
-        "retrieved": "2026-11-02",
+        "attempted": "2026-11-09",
+        "retrieved": "2026-11-09",
         "period": "November 2026"
       },
       "ICE": {
         "status": "ok",
-        "attempted": "2026-11-02",
-        "retrieved": "2026-11-02",
+        "attempted": "2026-11-09",
+        "retrieved": "2026-11-09",
         "period": "FY2026, data to Jul 9, 2026"
       },
       "SNAP": {
         "status": "ok",
-        "attempted": "2026-11-02",
-        "retrieved": "2026-11-02",
+        "attempted": "2026-11-09",
+        "retrieved": "2026-11-09",
         "period": "FY2025"
       },
       "Cities": {
         "status": "ok",
-        "attempted": "2026-11-02",
-        "retrieved": "2026-11-02",
+        "attempted": "2026-11-09",
+        "retrieved": "2026-11-09",
         "period": "ACS 2025"
       }
     },
-    "attempted": "2026-11-02",
-    "generation": "2026-11-02-63b785",
+    "attempted": "2026-11-09",
+    "generation": "2026-11-09-a106c6",
     "vintages": {
       "income": "ACS 2025",
       "violentCrime": "FBI 2025",
