@@ -1,9 +1,9 @@
 {
-  "lastRun": "2026-11-09T07:28:59.628Z",
+  "lastRun": "2026-11-09T16:19:12.778Z",
   "publishedThisRun": true,
   "signed": true,
   "dataUpdated": "2026-11-09",
-  "generation": "2026-11-09-a106c6",
+  "generation": "2026-11-09-1d87f2",
   "sources": {
     "BLS": {
       "status": "ok",
