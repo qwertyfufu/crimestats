@@ -9,8 +9,10 @@
 
 import { inflateRawSync } from 'zlib';
 
+export const MAX_ENTRY_BYTES = 256 * 1024 * 1024;
+
 /** Map of entry name -> Buffer for every file in a zip archive. */
-export function unzip(buf) {
+export function unzip(buf, { maxEntryBytes = MAX_ENTRY_BYTES } = {}) {
   let eocd = buf.length - 22;
   while (eocd >= 0 && buf.readUInt32LE(eocd) !== 0x06054b50) eocd--;
   if (eocd < 0) throw new Error('not a zip archive');
@@ -27,7 +29,9 @@ export function unzip(buf) {
     const start = local + 30 + buf.readUInt16LE(local + 26) + buf.readUInt16LE(local + 28);
     const raw = buf.subarray(start, start + size);
     if (method === 0) files[name] = raw;
-    else if (method === 8) files[name] = inflateRawSync(raw);
+    // Capped: a zip bomb from a compromised download would otherwise fill the
+    // job's memory (security audit 2026-11-09, J1). Real sheets are a few MB.
+    else if (method === 8) files[name] = inflateRawSync(raw, { maxOutputLength: maxEntryBytes });
     else throw new Error(`zip entry ${name}: unsupported compression method ${method}`);
     p += 46 + nameLen + extraLen + commentLen;
   }

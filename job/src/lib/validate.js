@@ -16,6 +16,16 @@
 const isFiniteNum = (v) => typeof v === 'number' && Number.isFinite(v);
 const isPlainObject = (v) => v !== null && typeof v === 'object' && !Array.isArray(v);
 const inRange = (lo, hi) => (v) => isFiniteNum(v) && v >= lo && v <= hi;
+const shortText = (max) => (v) => typeof v === 'string' && v.length <= max;
+
+// Size limits. Every value is far above the real data (longest name 20
+// characters, 4 demographic groups, 25 points in a series, 10 sources), and
+// low enough that a hostile file cannot freeze the app: a 50,000-point series
+// held the screen for 18.7 s on a Pixel 7 Pro (security audit 2026-11-09, V1).
+export const LIMITS = Object.freeze({ records: 200, name: 80, label: 40, groups: 12, series: 240, sources: 30, text: 300, vintage: 120 });
+// A small object of short labels -> values: demographics, welfare breakdown.
+const smallMap = (test) => (v) => isPlainObject(v) && Object.keys(v).length > 0 && Object.keys(v).length <= LIMITS.groups
+  && Object.keys(v).every(shortText(LIMITS.label)) && Object.values(v).every(test);
 
 // The jurisdictions the app knows how to draw. A remote payload of fifty
 // arbitrary unique ids must not count as "all states covered".
@@ -29,7 +39,7 @@ const KNOWN = { state: new Set(STATE_IDS), metro: new Set(METRO_IDS) };
 
 const REQUIRED = [
   { field: 'id', test: (v) => typeof v === 'string' && v.length >= 2 && v.length <= 4, msg: 'id must be a 2-4 char code' },
-  { field: 'name', test: (v) => typeof v === 'string' && v.length > 1, msg: 'name must be a non-empty string' },
+  { field: 'name', test: (v) => typeof v === 'string' && v.length > 1 && v.length <= LIMITS.name, msg: `name must be a string of 2-${LIMITS.name} characters` },
   { field: 'population', test: (v) => isFiniteNum(v) && v > 1000, msg: 'population must be a number > 1000' },
   { field: 'political', test: (v) => v === 'Red' || v === 'Blue', msg: "political must be 'Red' or 'Blue'" },
   { field: 'violentCrime', test: inRange(0, 10000), msg: 'violentCrime must be 0-10000 per 100k' },
@@ -37,8 +47,8 @@ const REQUIRED = [
   { field: 'income', test: (v) => isFiniteNum(v) && v > 10000 && v < 500000, msg: 'income must be a plausible median' },
   {
     field: 'demographics',
-    test: (v) => isPlainObject(v) && Object.keys(v).length > 0 && Object.values(v).every(inRange(0, 100)),
-    msg: 'demographics must be a non-empty object of 0-100 shares'
+    test: smallMap(inRange(0, 100)),
+    msg: `demographics must be 1-${LIMITS.groups} short labels with 0-100 shares`
   }
 ];
 
@@ -83,8 +93,7 @@ const OPTIONAL_STRINGS = { fbiNote: 400 };
 const validWelfare = (w) => isPlainObject(w)
   && isFiniteNum(w.total) && w.total >= 0
   && isFiniteNum(w.perCapita) && w.perCapita >= 0
-  && isPlainObject(w.breakdown) && Object.keys(w.breakdown).length > 0
-  && Object.values(w.breakdown).every(inRange(0, 100));
+  && smallMap(inRange(0, 100))(w.breakdown);
 
 /**
  * Returns an array of human-readable problems; empty means the record is usable.
@@ -112,6 +121,7 @@ export function validateRecord(rec, { kind } = {}) {
     if (v !== undefined) {
       // A single non-finite value draws a false plunge to zero; reject the series.
       if (!Array.isArray(v)) bad(values, 'must be an array');
+      else if (v.length > LIMITS.series) bad(values, `must have at most ${LIMITS.series} values`);
       else if (!v.every(isFiniteNum)) bad(values, 'contains non-finite values');
       else if (!v.every(range)) bad(values, 'contains a value out of range');
       else if (v.length && rec[headline] !== v[v.length - 1]) bad(values, `must end on the ${headline} shown above it (${rec[headline]})`);
@@ -126,12 +136,20 @@ export function validateRecord(rec, { kind } = {}) {
       else if (p.some((x, i) => i > 0 && x <= p[i - 1])) bad(periods, 'must be strictly increasing');
     }
     const s = rec[span];
-    if (s !== undefined && !(Array.isArray(s) && s.length === 2 && s.every(x => typeof x === 'string'))) bad(span, 'must be two labels');
+    if (s !== undefined && !(Array.isArray(s) && s.length === 2 && s.every(shortText(LIMITS.label)))) bad(span, 'must be two short labels');
   }
 
   if (rec.welfare !== undefined && rec.welfare !== null && !validWelfare(rec.welfare)) bad('welfare', 'must have numeric total, perCapita and breakdown');
   return problems;
 }
+
+// Every field a location record may carry. A download keeps only these, so a
+// field nothing checks can never reach the screen.
+export const RECORD_FIELDS = Object.freeze([...new Set([
+  ...REQUIRED.map(r => r.field), ...Object.keys(OPTIONAL_NUMBERS), ...Object.keys(OPTIONAL_STRINGS),
+  ...SERIES.flatMap(x => [x.values, x.periods, x.span].filter(Boolean)), 'welfare'
+])]);
+export const pickKnown = (rec) => Object.fromEntries(RECORD_FIELDS.filter(k => Object.hasOwn(rec, k)).map(k => [k, rec[k]]));
 
 /**
  * Validates a whole dataset. Returns { records, problems } — invalid records are
@@ -140,6 +158,9 @@ export function validateRecord(rec, { kind } = {}) {
  */
 export function validateDataset(records, { min = 1, kind, requireAll = false } = {}) {
   if (!Array.isArray(records)) return { records: [], problems: ['dataset is not an array'] };
+  // Checked before the records are: a file of a million junk rows would
+  // otherwise cost a million problem reports.
+  if (records.length > LIMITS.records) return { records: [], problems: [`dataset has ${records.length} records, more than ${LIMITS.records}`] };
   const problems = [];
   const seen = new Set();
   const good = records.filter((rec) => {
@@ -186,6 +207,12 @@ const META_DATES = new Set(['updated', 'attempted']);
 const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/;
 const STATUS = new Set(['ok', 'failed', 'skipped']);
 
+// Copies of nested metadata are built with Object.fromEntries: a key named
+// "__proto__" then stays an ordinary key and cannot change an object's
+// prototype, as plain assignment would.
+const clip = (v, n) => String(v).slice(0, n);
+const entries = (o) => Object.entries(o);
+
 export function sanitizeMeta(meta) {
   const out = {};
   const problems = [];
@@ -196,33 +223,40 @@ export function sanitizeMeta(meta) {
     else problems.push(`meta.${k}: must be ${META_DATES.has(k) ? 'a YYYY-MM-DD date' : 'a short string'}`);
   }
   if (meta.staleSources !== undefined) {
-    if (Array.isArray(meta.staleSources) && meta.staleSources.every(x => typeof x === 'string')) out.staleSources = meta.staleSources;
-    else problems.push('meta.staleSources: must be an array of strings');
+    const a = meta.staleSources;
+    if (Array.isArray(a) && a.length <= LIMITS.sources && a.every(shortText(LIMITS.label))) out.staleSources = [...a];
+    else problems.push('meta.staleSources: must be a short list of source names');
   }
   if (meta.vintages !== undefined) {
-    if (isPlainObject(meta.vintages) && Object.values(meta.vintages).every(x => typeof x === 'string')) out.vintages = meta.vintages;
-    else problems.push('meta.vintages: must map metric -> label');
+    const v = meta.vintages;
+    if (isPlainObject(v) && entries(v).length <= LIMITS.sources && entries(v).every(([k, x]) => shortText(LIMITS.label)(k) && shortText(LIMITS.vintage)(x))) out.vintages = Object.fromEntries(entries(v));
+    else problems.push('meta.vintages: must map metric -> short label');
   }
   if (meta.sourceStatus !== undefined) {
-    const ok = isPlainObject(meta.sourceStatus) && Object.values(meta.sourceStatus).every(s => isPlainObject(s)
+    const ss = meta.sourceStatus;
+    const ok = isPlainObject(ss) && entries(ss).length <= LIMITS.sources && entries(ss).every(([name, s]) => shortText(LIMITS.label)(name) && isPlainObject(s)
       && STATUS.has(s.status)
       && ['period', 'retrieved', 'attempted', 'reason'].every(k => s[k] === undefined || typeof s[k] === 'string'));
-    if (ok) out.sourceStatus = meta.sourceStatus;
+    // Long reasons are cut rather than refused, so one wordy error message
+    // does not hide every source's status.
+    if (ok) out.sourceStatus = Object.fromEntries(entries(ss).map(([name, s]) => [name, Object.fromEntries(
+      ['status', 'period', 'retrieved', 'attempted', 'reason'].filter(k => s[k] !== undefined).map(k => [k, clip(s[k], LIMITS.text)]))]));
     else problems.push('meta.sourceStatus: malformed');
   }
   if (meta.seriesGaps !== undefined) {
     const g = meta.seriesGaps;
-    if (isPlainObject(g) && Object.values(g).every(a => Array.isArray(a) && a.every(x => typeof x === 'string' && (PERIOD.test(x) || YEAR.test(x))))) out.seriesGaps = g;
-    else problems.push('meta.seriesGaps: must map series -> YYYY-MM or YYYY list');
+    if (isPlainObject(g) && entries(g).length <= LIMITS.sources && entries(g).every(([k, a]) => shortText(LIMITS.label)(k) && Array.isArray(a) && a.length <= LIMITS.series && a.every(x => typeof x === 'string' && (PERIOD.test(x) || YEAR.test(x))))) {
+      out.seriesGaps = Object.fromEntries(entries(g).map(([k, a]) => [k, [...a]]));
+    } else problems.push('meta.seriesGaps: must map series -> YYYY-MM or YYYY list');
   }
   if (meta.cpiAnnual !== undefined) {
     const c = meta.cpiAnnual;
-    if (isPlainObject(c) && Object.keys(c).length > 0 && Object.entries(c).every(([y, v]) => YEAR.test(y) && inRange(50, 2000)(v))) out.cpiAnnual = c;
+    if (isPlainObject(c) && entries(c).length > 0 && entries(c).length <= LIMITS.series && entries(c).every(([y, v]) => YEAR.test(y) && inRange(50, 2000)(v))) out.cpiAnnual = Object.fromEntries(entries(c));
     else problems.push('meta.cpiAnnual: must map YYYY -> index value');
   }
   if (meta.overdoseCompleteness !== undefined) {
     const c = meta.overdoseCompleteness;
-    if (isPlainObject(c) && inRange(0, 100)(c.minPercentComplete) && inRange(0, 100)(c.maxPendingPct)) out.overdoseCompleteness = c;
+    if (isPlainObject(c) && inRange(0, 100)(c.minPercentComplete) && inRange(0, 100)(c.maxPendingPct)) out.overdoseCompleteness = { minPercentComplete: c.minPercentComplete, maxPendingPct: c.maxPendingPct };
     else problems.push('meta.overdoseCompleteness: malformed');
   }
   return { meta: out, problems };

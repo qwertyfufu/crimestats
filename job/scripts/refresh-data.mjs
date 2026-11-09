@@ -37,6 +37,12 @@ import {
 } from './refresh-core.mjs';
 import { readFirstSheet, readSheetGrid, sheetNames, unzip } from './xlsx-lite.mjs';
 
+// Every request gives up after two minutes, so one hung agency site fails its
+// own source instead of running the whole weekly job into its time limit
+// (security audit 2026-11-09, J2).
+const FETCH_TIMEOUT_MS = 120_000;
+const fetch = (url, init = {}) => globalThis.fetch(url, { signal: AbortSignal.timeout(FETCH_TIMEOUT_MS), ...init });
+
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 
 const envFile = join(ROOT, '.env');

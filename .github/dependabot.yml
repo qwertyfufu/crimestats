@@ -1,0 +1,9 @@
+# Keeps the pinned GitHub Actions in .github/workflows up to date: once a
+# month Dependabot opens a pull request moving a pin to the newest release's
+# exact commit. Read it before merging; nothing changes until you do.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly

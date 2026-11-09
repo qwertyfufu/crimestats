@@ -8,8 +8,9 @@ on:
     - cron: '17 6 * * 1'   # Mondays, 06:17 UTC
   workflow_dispatch:
 
+# Read-only by default; only the job below may write, to commit the data file.
 permissions:
-  contents: write          # to commit the refreshed data file
+  contents: read
 
 concurrency:
   group: refresh-data
@@ -19,9 +20,16 @@ jobs:
   refresh:
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    permissions:
+      contents: write      # to commit the refreshed data file
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      # Actions are pinned to exact commits, not tags: a tag can be moved to
+      # other code, and every step in this job runs before the signing key is
+      # used. Dependabot (.github/dependabot.yml) proposes updates to the pins.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false   # the push token is only given to the Commit step
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version: 22
 
@@ -40,9 +48,12 @@ jobs:
         run: node job/scripts/publish-data.mjs
 
       - name: Commit
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data job/src/live-baked.js
           git commit -m "data: weekly refresh $(date -u +%F)" || echo "Nothing changed."
-          git push
+          auth=$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)
+          git -c http.https://github.com/.extraheader="AUTHORIZATION: basic $auth" push origin "HEAD:${GITHUB_REF_NAME}"
