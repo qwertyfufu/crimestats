@@ -3,8 +3,8 @@
 export default {
   "meta": {
     "unemploymentPeriod": "September 2026",
-    "overdosePeriod": "12 months ending May 2026",
-    "updated": "2026-11-09",
+    "overdosePeriod": "12 months ending Jun 2026",
+    "updated": "2026-11-16",
     "nchsPeriod": "2025 Q2",
     "seriesGaps": {
       "unemployment": [
@@ -15,73 +15,73 @@ export default {
       "violentCrime": []
     },
     "overdoseCompleteness": {
-      "minPercentComplete": 99.5,
-      "maxPendingPct": 2.4
+      "minPercentComplete": 99.2,
+      "maxPendingPct": 2.7
     },
     "sourceStatus": {
       "BLS": {
         "status": "ok",
-        "attempted": "2026-11-09",
-        "retrieved": "2026-11-09",
+        "attempted": "2026-11-16",
+        "retrieved": "2026-11-16",
         "period": "September 2026"
       },
       "CDC": {
         "status": "ok",
-        "attempted": "2026-11-09",
-        "retrieved": "2026-11-09",
-        "period": "12 months ending May 2026"
+        "attempted": "2026-11-16",
+        "retrieved": "2026-11-16",
+        "period": "12 months ending Jun 2026"
       },
       "NCHS": {
         "status": "ok",
-        "attempted": "2026-11-09",
-        "retrieved": "2026-11-09",
+        "attempted": "2026-11-16",
+        "retrieved": "2026-11-16",
         "period": "2025 Q2"
       },
       "Census": {
         "status": "ok",
-        "attempted": "2026-11-09",
-        "retrieved": "2026-11-09",
+        "attempted": "2026-11-16",
+        "retrieved": "2026-11-16",
         "period": "ACS 2025"
       },
       "FBI": {
         "status": "ok",
-        "attempted": "2026-11-09",
-        "retrieved": "2026-11-09",
+        "attempted": "2026-11-16",
+        "retrieved": "2026-11-16",
         "period": "FBI 2025"
       },
       "CPI": {
         "status": "ok",
-        "attempted": "2026-11-09",
-        "retrieved": "2026-11-09",
+        "attempted": "2026-11-16",
+        "retrieved": "2026-11-16",
         "period": "CPI-U 2018–2024"
       },
       "PP": {
         "status": "ok",
-        "attempted": "2026-11-09",
-        "retrieved": "2026-11-09",
+        "attempted": "2026-11-16",
+        "retrieved": "2026-11-16",
         "period": "November 2026"
       },
       "ICE": {
         "status": "ok",
-        "attempted": "2026-11-09",
-        "retrieved": "2026-11-09",
+        "attempted": "2026-11-16",
+        "retrieved": "2026-11-16",
         "period": "FY2026, data to Jul 9, 2026"
       },
       "SNAP": {
         "status": "ok",
-        "attempted": "2026-11-09",
-        "retrieved": "2026-11-09",
+        "attempted": "2026-11-16",
+        "retrieved": "2026-11-16",
         "period": "FY2025"
       },
       "Cities": {
         "status": "ok",
-        "attempted": "2026-11-09",
-        "retrieved": "2026-11-09",
+        "attempted": "2026-11-16",
+        "retrieved": "2026-11-16",
         "period": "ACS 2025"
       }
     },
-    "attempted": "2026-11-09",
-    "generation": "2026-11-09-1d87f2",
+    "attempted": "2026-11-16",
+    "generation": "2026-11-16-9f9f6f",
     "vintages": {
       "income": "ACS 2025",
       "violentCrime": "FBI 2025",
@@ -139,7 +139,6 @@ export default {
       ],
       "overdoseRate": 15,
       "overdoseSeries": [
-        28,
         26,
         26,
         25,
@@ -162,11 +161,12 @@ export default {
         17,
         16,
         16,
+        15,
         15
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 22.1,
       "suicideRate": 15.9,
@@ -197,7 +197,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -220,7 +219,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 67663,
       "incomeSeries": [
@@ -293,7 +293,6 @@ export default {
       ],
       "overdoseRate": 40,
       "overdoseSeries": [
-        54,
         55,
         54,
         52,
@@ -316,11 +315,12 @@ export default {
         41,
         41,
         41,
+        40,
         40
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 25,
       "suicideRate": 30.6,
@@ -351,7 +351,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -374,7 +373,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 95220,
       "incomeSeries": [
@@ -445,9 +445,8 @@ export default {
         "Oct 2024",
         "Sep 2026"
       ],
-      "overdoseRate": 38,
+      "overdoseRate": 37,
       "overdoseSeries": [
-        35,
         34,
         34,
         33,
@@ -470,11 +469,12 @@ export default {
         39,
         39,
         38,
-        38
+        38,
+        37
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 17.1,
       "suicideRate": 18.9,
@@ -505,7 +505,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -528,7 +527,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 82940,
       "incomeSeries": [
@@ -599,10 +599,9 @@ export default {
         "Oct 2024",
         "Sep 2026"
       ],
-      "overdoseRate": 12,
+      "overdoseRate": 13,
       "overdoseSeries": [
         15,
-        15,
         14,
         14,
         13,
@@ -624,11 +623,12 @@ export default {
         12,
         12,
         12,
-        12
+        13,
+        13
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 19.6,
       "suicideRate": 18.7,
@@ -659,7 +659,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -682,7 +681,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 65588,
       "incomeSeries": [
@@ -755,7 +755,6 @@ export default {
       ],
       "overdoseRate": 21,
       "overdoseSeries": [
-        29,
         28,
         27,
         26,
@@ -778,11 +777,12 @@ export default {
         23,
         22,
         22,
+        21,
         21
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 6.7,
       "suicideRate": 9.5,
@@ -813,7 +813,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -836,7 +835,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 102159,
       "incomeSeries": [
@@ -909,7 +909,6 @@ export default {
       ],
       "overdoseRate": 32,
       "overdoseSeries": [
-        33,
         32,
         30,
         30,
@@ -929,14 +928,15 @@ export default {
         31,
         31,
         31,
+        32,
         32,
         32,
         32,
         32
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 15.1,
       "suicideRate": 21.1,
@@ -967,7 +967,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -990,7 +989,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 99729,
       "incomeSeries": [
@@ -1063,7 +1063,6 @@ export default {
       ],
       "overdoseRate": 22,
       "overdoseSeries": [
-        33,
         32,
         31,
         30,
@@ -1086,11 +1085,12 @@ export default {
         23,
         22,
         22,
+        22,
         22
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 5.2,
       "suicideRate": 9.2,
@@ -1121,7 +1121,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -1144,7 +1143,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 100056,
       "incomeSeries": [
@@ -1215,9 +1215,8 @@ export default {
         "Oct 2024",
         "Sep 2026"
       ],
-      "overdoseRate": 26,
+      "overdoseRate": 24,
       "overdoseSeries": [
-        46,
         43,
         40,
         39,
@@ -1240,11 +1239,12 @@ export default {
         30,
         28,
         26,
-        26
+        26,
+        24
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 11.5,
       "suicideRate": 12.3,
@@ -1275,7 +1275,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -1298,7 +1297,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 92520,
       "incomeSeries": [
@@ -1371,7 +1371,6 @@ export default {
       ],
       "overdoseRate": 47,
       "overdoseSeries": [
-        82,
         79,
         75,
         71,
@@ -1393,12 +1392,13 @@ export default {
         51,
         50,
         48,
+        48,
         47,
         47
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 19.1,
       "suicideRate": 5.5,
@@ -1429,7 +1429,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -1452,7 +1451,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 109505,
       "incomeSeries": [
@@ -1491,7 +1491,7 @@ export default {
       "iceDetained": 0,
       "snapBenefits": 324587747,
       "ppCenters": 1,
-      "ppVirtual": 0
+      "ppVirtual": 1
     },
     "FL": {
       "unemployment": 4.4,
@@ -1526,7 +1526,6 @@ export default {
       ],
       "overdoseRate": 18,
       "overdoseSeries": [
-        30,
         29,
         28,
         27,
@@ -1549,11 +1548,12 @@ export default {
         18,
         18,
         18,
+        18,
         18
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 11.9,
       "suicideRate": 13.7,
@@ -1584,7 +1584,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -1607,7 +1606,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 80846,
       "incomeSeries": [
@@ -1681,7 +1681,6 @@ export default {
       ],
       "overdoseRate": 14,
       "overdoseSeries": [
-        21,
         20,
         20,
         19,
@@ -1702,13 +1701,14 @@ export default {
         15,
         15,
         15,
+        14,
         14,
         14,
         14
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 16.8,
       "suicideRate": 14.1,
@@ -1739,7 +1739,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -1762,7 +1761,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 81847,
       "incomeSeries": [
@@ -1833,9 +1833,8 @@ export default {
         "Oct 2024",
         "Sep 2026"
       ],
-      "overdoseRate": 21,
+      "overdoseRate": 20,
       "overdoseSeries": [
-        23,
         23,
         22,
         23,
@@ -1858,11 +1857,12 @@ export default {
         22,
         22,
         21,
-        21
+        21,
+        20
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 4.2,
       "suicideRate": 13.9,
@@ -1893,7 +1893,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -1916,7 +1915,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 105013,
       "incomeSeries": [
@@ -1992,7 +1992,6 @@ export default {
         19,
         19,
         19,
-        19,
         18,
         17,
         17,
@@ -2012,11 +2011,12 @@ export default {
         15,
         14,
         13,
+        14,
         14
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 14.4,
       "suicideRate": 20.2,
@@ -2047,7 +2047,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -2070,7 +2069,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 84234,
       "incomeSeries": [
@@ -2144,7 +2144,6 @@ export default {
       "overdoseRate": 15,
       "overdoseSeries": [
         24,
-        24,
         23,
         23,
         22,
@@ -2166,11 +2165,12 @@ export default {
         15,
         15,
         15,
+        15,
         15
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 11.4,
       "suicideRate": 10.9,
@@ -2201,7 +2201,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -2224,7 +2223,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 86676,
       "incomeSeries": [
@@ -2295,9 +2295,8 @@ export default {
         "Oct 2024",
         "Sep 2026"
       ],
-      "overdoseRate": 18,
+      "overdoseRate": 17,
       "overdoseSeries": [
-        29,
         28,
         27,
         27,
@@ -2320,11 +2319,12 @@ export default {
         20,
         19,
         19,
-        18
+        18,
+        17
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 16.4,
       "suicideRate": 16.7,
@@ -2355,7 +2355,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -2378,7 +2377,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 74516,
       "incomeSeries": [
@@ -2452,7 +2452,6 @@ export default {
       "overdoseRate": 11,
       "overdoseSeries": [
         14,
-        14,
         13,
         13,
         13,
@@ -2470,6 +2469,7 @@ export default {
         13,
         12,
         12,
+        11,
         11,
         11,
         11,
@@ -2477,8 +2477,8 @@ export default {
         11
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 10.4,
       "suicideRate": 15.7,
@@ -2509,7 +2509,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -2532,7 +2531,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 76483,
       "incomeSeries": [
@@ -2605,7 +2605,6 @@ export default {
       ],
       "overdoseRate": 16,
       "overdoseSeries": [
-        21,
         20,
         19,
         19,
@@ -2628,11 +2627,12 @@ export default {
         17,
         16,
         16,
+        16,
         16
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 15.4,
       "suicideRate": 18.3,
@@ -2663,7 +2663,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -2686,7 +2685,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 77824,
       "incomeSeries": [
@@ -2757,9 +2757,8 @@ export default {
         "Oct 2024",
         "Sep 2026"
       ],
-      "overdoseRate": 23,
+      "overdoseRate": 22,
       "overdoseSeries": [
-        41,
         40,
         39,
         37,
@@ -2782,11 +2781,12 @@ export default {
         25,
         24,
         24,
-        23
+        23,
+        22
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 17.9,
       "suicideRate": 18,
@@ -2817,7 +2817,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -2840,7 +2839,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 66447,
       "incomeSeries": [
@@ -2913,7 +2913,6 @@ export default {
       ],
       "overdoseRate": 25,
       "overdoseSeries": [
-        42,
         41,
         39,
         37,
@@ -2936,11 +2935,12 @@ export default {
         27,
         26,
         26,
+        25,
         25
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 21.2,
       "suicideRate": 13.5,
@@ -2971,7 +2971,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -2994,7 +2993,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 65139,
       "incomeSeries": [
@@ -3067,7 +3067,6 @@ export default {
       ],
       "overdoseRate": 25,
       "overdoseSeries": [
-        40,
         39,
         38,
         37,
@@ -3090,11 +3089,12 @@ export default {
         27,
         26,
         25,
+        25,
         25
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 11.1,
       "suicideRate": 16.8,
@@ -3125,7 +3125,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -3148,7 +3147,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 81760,
       "incomeSeries": [
@@ -3221,7 +3221,6 @@ export default {
       ],
       "overdoseRate": 21,
       "overdoseSeries": [
-        36,
         35,
         34,
         33,
@@ -3244,11 +3243,12 @@ export default {
         22,
         21,
         21,
+        21,
         21
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 11.2,
       "suicideRate": 9.7,
@@ -3279,7 +3279,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -3302,7 +3301,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 107700,
       "incomeSeries": [
@@ -3375,7 +3375,6 @@ export default {
       ],
       "overdoseRate": 19,
       "overdoseSeries": [
-        29,
         28,
         27,
         26,
@@ -3398,11 +3397,12 @@ export default {
         19,
         19,
         19,
+        19,
         19
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 3.6,
       "suicideRate": 7.8,
@@ -3433,7 +3433,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -3456,7 +3455,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 106539,
       "incomeSeries": [
@@ -3529,7 +3529,6 @@ export default {
       ],
       "overdoseRate": 17,
       "overdoseSeries": [
-        25,
         24,
         23,
         22,
@@ -3552,11 +3551,12 @@ export default {
         17,
         17,
         17,
+        17,
         17
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 11.5,
       "suicideRate": 13.6,
@@ -3587,7 +3587,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -3610,7 +3609,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 75832,
       "incomeSeries": [
@@ -3683,7 +3683,6 @@ export default {
       ],
       "overdoseRate": 17,
       "overdoseSeries": [
-        21,
         20,
         20,
         19,
@@ -3704,13 +3703,14 @@ export default {
         18,
         18,
         18,
+        17,
         17,
         17,
         17
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 9.5,
       "suicideRate": 14,
@@ -3741,7 +3741,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -3764,7 +3763,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 92297,
       "incomeSeries": [
@@ -3838,7 +3838,6 @@ export default {
       "overdoseRate": 14,
       "overdoseSeries": [
         20,
-        20,
         19,
         19,
         19,
@@ -3860,11 +3859,12 @@ export default {
         15,
         14,
         14,
+        14,
         14
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 26.8,
       "suicideRate": 15.2,
@@ -3895,7 +3895,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -3918,7 +3917,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 59346,
       "incomeSeries": [
@@ -3992,7 +3992,6 @@ export default {
       "overdoseRate": 19,
       "overdoseSeries": [
         29,
-        29,
         27,
         26,
         25,
@@ -4013,12 +4012,13 @@ export default {
         20,
         20,
         20,
-        19,
+        20,
+        20,
         19
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 20.3,
       "suicideRate": 18.2,
@@ -4049,7 +4049,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -4072,7 +4071,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 75485,
       "incomeSeries": [
@@ -4145,7 +4145,6 @@ export default {
       ],
       "overdoseRate": 15,
       "overdoseSeries": [
-        16,
         17,
         17,
         17,
@@ -4168,11 +4167,12 @@ export default {
         16,
         16,
         16,
+        15,
         15
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 18.6,
       "suicideRate": 25.7,
@@ -4203,7 +4203,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -4226,7 +4225,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 77099,
       "incomeSeries": [
@@ -4299,7 +4299,6 @@ export default {
       ],
       "overdoseRate": 8,
       "overdoseSeries": [
-        8,
         7,
         7,
         7,
@@ -4320,13 +4319,14 @@ export default {
         7,
         8,
         7,
+        8,
         8,
         8,
         8
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 11,
       "suicideRate": 15.9,
@@ -4357,7 +4357,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -4380,7 +4379,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 81614,
       "incomeSeries": [
@@ -4456,7 +4456,6 @@ export default {
         48,
         48,
         48,
-        48,
         47,
         46,
         46,
@@ -4476,11 +4475,12 @@ export default {
         39,
         38,
         38,
+        37,
         37
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 16,
       "suicideRate": 18.4,
@@ -4511,7 +4511,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -4534,7 +4533,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 85198,
       "incomeSeries": [
@@ -4605,9 +4605,8 @@ export default {
         "Oct 2024",
         "Sep 2026"
       ],
-      "overdoseRate": 17,
+      "overdoseRate": 16,
       "overdoseSeries": [
-        26,
         25,
         24,
         23,
@@ -4630,11 +4629,12 @@ export default {
         18,
         18,
         18,
-        17
+        17,
+        16
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 10.2,
       "suicideRate": 16.4,
@@ -4665,7 +4665,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -4688,7 +4687,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 106759,
       "incomeSeries": [
@@ -4759,9 +4759,8 @@ export default {
         "Oct 2024",
         "Sep 2026"
       ],
-      "overdoseRate": 16,
+      "overdoseRate": 15,
       "overdoseSeries": [
-        25,
         24,
         23,
         23,
@@ -4784,11 +4783,12 @@ export default {
         17,
         17,
         16,
-        16
+        16,
+        15
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 3.7,
       "suicideRate": 6.7,
@@ -4819,7 +4819,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -4842,7 +4841,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 107797,
       "incomeSeries": [
@@ -4913,9 +4913,8 @@ export default {
         "Oct 2024",
         "Sep 2026"
       ],
-      "overdoseRate": 52,
+      "overdoseRate": 53,
       "overdoseSeries": [
-        42,
         40,
         40,
         39,
@@ -4938,11 +4937,12 @@ export default {
         49,
         50,
         51,
-        52
+        53,
+        53
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 26.3,
       "suicideRate": 23.4,
@@ -4973,7 +4973,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -4996,7 +4995,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 70342,
       "incomeSeries": [
@@ -5070,7 +5070,6 @@ export default {
       "overdoseRate": 18,
       "overdoseSeries": [
         29,
-        29,
         27,
         27,
         26,
@@ -5092,11 +5091,12 @@ export default {
         19,
         19,
         18,
+        18,
         18
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 4.4,
       "suicideRate": 8.3,
@@ -5127,7 +5127,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -5150,7 +5149,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 89210,
       "incomeSeries": [
@@ -5221,9 +5221,8 @@ export default {
         "Oct 2024",
         "Sep 2026"
       ],
-      "overdoseRate": 19,
+      "overdoseRate": 18,
       "overdoseSeries": [
-        27,
         27,
         26,
         26,
@@ -5246,11 +5245,12 @@ export default {
         22,
         21,
         20,
-        19
+        19,
+        18
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 16.1,
       "suicideRate": 14.3,
@@ -5281,7 +5281,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -5304,7 +5303,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 77638,
       "incomeSeries": [
@@ -5375,9 +5375,8 @@ export default {
         "Oct 2024",
         "Sep 2026"
       ],
-      "overdoseRate": 14,
+      "overdoseRate": 13,
       "overdoseSeries": [
-        17,
         16,
         16,
         16,
@@ -5400,11 +5399,12 @@ export default {
         16,
         14,
         14,
-        14
+        14,
+        13
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 13.2,
       "suicideRate": 18.1,
@@ -5435,7 +5435,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -5458,7 +5457,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 81545,
       "incomeSeries": [
@@ -5532,7 +5532,6 @@ export default {
       ],
       "overdoseRate": 20,
       "overdoseSeries": [
-        33,
         32,
         31,
         30,
@@ -5555,11 +5554,12 @@ export default {
         20,
         20,
         20,
+        20,
         20
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 14.1,
       "suicideRate": 14.7,
@@ -5590,7 +5590,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -5613,7 +5612,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 74804,
       "incomeSeries": [
@@ -5687,7 +5687,6 @@ export default {
       "overdoseRate": 19,
       "overdoseSeries": [
         29,
-        29,
         28,
         27,
         26,
@@ -5709,11 +5708,12 @@ export default {
         22,
         21,
         20,
+        20,
         19
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 18.2,
       "suicideRate": 20,
@@ -5744,7 +5744,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -5767,7 +5766,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 68441,
       "incomeSeries": [
@@ -5838,9 +5838,8 @@ export default {
         "Oct 2024",
         "Sep 2026"
       ],
-      "overdoseRate": 15,
+      "overdoseRate": 13,
       "overdoseSeries": [
-        45,
         42,
         40,
         39,
@@ -5863,11 +5862,12 @@ export default {
         22,
         20,
         17,
-        15
+        15,
+        13
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 13.7,
       "suicideRate": 20.4,
@@ -5898,7 +5898,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -5921,7 +5920,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 86953,
       "incomeSeries": [
@@ -5992,9 +5992,8 @@ export default {
         "Oct 2024",
         "Sep 2026"
       ],
-      "overdoseRate": 20,
+      "overdoseRate": 19,
       "overdoseSeries": [
-        31,
         30,
         29,
         28,
@@ -6017,11 +6016,12 @@ export default {
         21,
         21,
         21,
-        20
+        20,
+        19
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 11.3,
       "suicideRate": 13.9,
@@ -6052,7 +6052,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -6075,7 +6074,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 81473,
       "incomeSeries": [
@@ -6146,9 +6146,8 @@ export default {
         "Oct 2024",
         "Sep 2026"
       ],
-      "overdoseRate": 16,
+      "overdoseRate": 17,
       "overdoseSeries": [
-        36,
         36,
         35,
         35,
@@ -6171,11 +6170,12 @@ export default {
         18,
         17,
         17,
-        16
+        16,
+        17
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 5.3,
       "suicideRate": 8.3,
@@ -6206,7 +6206,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -6229,7 +6228,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 91039,
       "incomeSeries": [
@@ -6302,7 +6302,6 @@ export default {
       ],
       "overdoseRate": 22,
       "overdoseSeries": [
-        34,
         33,
         32,
         31,
@@ -6325,11 +6324,12 @@ export default {
         24,
         24,
         23,
+        23,
         22
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 19.9,
       "suicideRate": 15.9,
@@ -6360,7 +6360,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -6383,7 +6382,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 73672,
       "incomeSeries": [
@@ -6456,7 +6456,6 @@ export default {
       ],
       "overdoseRate": 9,
       "overdoseSeries": [
-        9,
         10,
         10,
         9,
@@ -6479,11 +6478,12 @@ export default {
         10,
         10,
         9,
+        9,
         9
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 16.1,
       "suicideRate": 22.8,
@@ -6514,7 +6514,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -6537,7 +6536,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 80506,
       "incomeSeries": [
@@ -6611,7 +6611,6 @@ export default {
       "overdoseRate": 28,
       "overdoseSeries": [
         45,
-        45,
         43,
         41,
         39,
@@ -6633,11 +6632,12 @@ export default {
         30,
         29,
         29,
+        28,
         28
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 19.8,
       "suicideRate": 17.2,
@@ -6668,7 +6668,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -6691,7 +6690,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 75875,
       "incomeSeries": [
@@ -6764,7 +6764,6 @@ export default {
       ],
       "overdoseRate": 15,
       "overdoseSeries": [
-        19,
         18,
         18,
         17,
@@ -6775,6 +6774,7 @@ export default {
         16,
         16,
         16,
+        15,
         15,
         15,
         15,
@@ -6790,8 +6790,8 @@ export default {
         15
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 13.6,
       "suicideRate": 14,
@@ -6822,7 +6822,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -6845,7 +6844,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 82625,
       "incomeSeries": [
@@ -6918,7 +6918,6 @@ export default {
       ],
       "overdoseRate": 19,
       "overdoseSeries": [
-        21,
         22,
         22,
         21,
@@ -6937,6 +6936,7 @@ export default {
         20,
         20,
         20,
+        19,
         19,
         19,
         19,
@@ -6944,8 +6944,8 @@ export default {
         19
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 13.8,
       "suicideRate": 19.7,
@@ -6976,7 +6976,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -6999,7 +6998,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 99311,
       "incomeSeries": [
@@ -7072,7 +7072,6 @@ export default {
       ],
       "overdoseRate": 24,
       "overdoseSeries": [
-        36,
         37,
         35,
         35,
@@ -7095,11 +7094,12 @@ export default {
         23,
         24,
         24,
+        24,
         24
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 14.1,
       "suicideRate": 18.2,
@@ -7130,7 +7130,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -7153,7 +7152,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 86018,
       "incomeSeries": [
@@ -7226,7 +7226,6 @@ export default {
       ],
       "overdoseRate": 14,
       "overdoseSeries": [
-        23,
         22,
         21,
         20,
@@ -7249,11 +7248,12 @@ export default {
         15,
         15,
         14,
+        14,
         14
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 12.3,
       "suicideRate": 12.5,
@@ -7284,7 +7284,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -7307,7 +7306,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 99322,
       "incomeSeries": [
@@ -7380,7 +7380,6 @@ export default {
       ],
       "overdoseRate": 32,
       "overdoseSeries": [
-        45,
         44,
         43,
         42,
@@ -7403,11 +7402,12 @@ export default {
         35,
         34,
         33,
+        32,
         32
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 11,
       "suicideRate": 15,
@@ -7438,7 +7438,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -7461,7 +7460,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 101946,
       "incomeSeries": [
@@ -7532,9 +7532,8 @@ export default {
         "Oct 2024",
         "Sep 2026"
       ],
-      "overdoseRate": 36,
+      "overdoseRate": 34,
       "overdoseSeries": [
-        64,
         60,
         57,
         54,
@@ -7557,11 +7556,12 @@ export default {
         37,
         37,
         36,
-        36
+        36,
+        34
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 13.9,
       "suicideRate": 16.2,
@@ -7592,7 +7592,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -7615,7 +7614,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 61340,
       "incomeSeries": [
@@ -7688,7 +7688,6 @@ export default {
       ],
       "overdoseRate": 16,
       "overdoseSeries": [
-        25,
         24,
         23,
         22,
@@ -7711,11 +7710,12 @@ export default {
         16,
         16,
         16,
+        16,
         16
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 11.6,
       "suicideRate": 14.2,
@@ -7746,7 +7746,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -7769,7 +7768,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 80213,
       "incomeSeries": [
@@ -7840,9 +7840,8 @@ export default {
         "Oct 2024",
         "Sep 2026"
       ],
-      "overdoseRate": 15,
+      "overdoseRate": 16,
       "overdoseSeries": [
-        22,
         22,
         21,
         20,
@@ -7865,11 +7864,12 @@ export default {
         15,
         15,
         15,
-        15
+        15,
+        16
       ],
       "overdoseSpan": [
-        "Jun 2024",
-        "May 2026"
+        "Jul 2024",
+        "Jun 2026"
       ],
       "firearmRate": 23.9,
       "suicideRate": 27.7,
@@ -7900,7 +7900,6 @@ export default {
         "2026-09"
       ],
       "overdosePeriods": [
-        "2024-06",
         "2024-07",
         "2024-08",
         "2024-09",
@@ -7923,7 +7922,8 @@ export default {
         "2026-02",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "income": 80894,
       "incomeSeries": [
