@@ -2,9 +2,9 @@
 // Overlay of live-fetched fields merged over the base data in data.js.
 export default {
   "meta": {
-    "unemploymentPeriod": "September 2026",
+    "unemploymentPeriod": "October 2026",
     "overdosePeriod": "12 months ending Jun 2026",
-    "updated": "2026-11-16",
+    "updated": "2026-11-23",
     "nchsPeriod": "2025 Q2",
     "seriesGaps": {
       "unemployment": [
@@ -21,67 +21,67 @@ export default {
     "sourceStatus": {
       "BLS": {
         "status": "ok",
-        "attempted": "2026-11-16",
-        "retrieved": "2026-11-16",
-        "period": "September 2026"
+        "attempted": "2026-11-23",
+        "retrieved": "2026-11-23",
+        "period": "October 2026"
       },
       "CDC": {
         "status": "ok",
-        "attempted": "2026-11-16",
-        "retrieved": "2026-11-16",
+        "attempted": "2026-11-23",
+        "retrieved": "2026-11-23",
         "period": "12 months ending Jun 2026"
       },
       "NCHS": {
         "status": "ok",
-        "attempted": "2026-11-16",
-        "retrieved": "2026-11-16",
+        "attempted": "2026-11-23",
+        "retrieved": "2026-11-23",
         "period": "2025 Q2"
       },
       "Census": {
         "status": "ok",
-        "attempted": "2026-11-16",
-        "retrieved": "2026-11-16",
+        "attempted": "2026-11-23",
+        "retrieved": "2026-11-23",
         "period": "ACS 2025"
       },
       "FBI": {
         "status": "ok",
-        "attempted": "2026-11-16",
-        "retrieved": "2026-11-16",
+        "attempted": "2026-11-23",
+        "retrieved": "2026-11-23",
         "period": "FBI 2025"
       },
       "CPI": {
         "status": "ok",
-        "attempted": "2026-11-16",
-        "retrieved": "2026-11-16",
+        "attempted": "2026-11-23",
+        "retrieved": "2026-11-23",
         "period": "CPI-U 2018–2024"
       },
       "PP": {
         "status": "ok",
-        "attempted": "2026-11-16",
-        "retrieved": "2026-11-16",
+        "attempted": "2026-11-23",
+        "retrieved": "2026-11-23",
         "period": "November 2026"
       },
       "ICE": {
         "status": "ok",
-        "attempted": "2026-11-16",
-        "retrieved": "2026-11-16",
+        "attempted": "2026-11-23",
+        "retrieved": "2026-11-23",
         "period": "FY2026, data to Jul 9, 2026"
       },
       "SNAP": {
         "status": "ok",
-        "attempted": "2026-11-16",
-        "retrieved": "2026-11-16",
+        "attempted": "2026-11-23",
+        "retrieved": "2026-11-23",
         "period": "FY2025"
       },
       "Cities": {
         "status": "ok",
-        "attempted": "2026-11-16",
-        "retrieved": "2026-11-16",
+        "attempted": "2026-11-23",
+        "retrieved": "2026-11-23",
         "period": "ACS 2025"
       }
     },
-    "attempted": "2026-11-16",
-    "generation": "2026-11-16-9f9f6f",
+    "attempted": "2026-11-23",
+    "generation": "2026-11-23-cd3f3d",
     "vintages": {
       "income": "ACS 2025",
       "violentCrime": "FBI 2025",
@@ -112,7 +112,6 @@ export default {
         3.1,
         3.1,
         3.1,
-        3.1,
         3,
         3,
         2.9,
@@ -131,11 +130,12 @@ export default {
         3.2,
         3.4,
         3.4,
+        3.5,
         3.5
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 15,
       "overdoseSeries": [
@@ -172,7 +172,6 @@ export default {
       "suicideRate": 15.9,
       "homicideRate": 11.8,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -194,7 +193,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -264,7 +264,6 @@ export default {
       "unemployment": 4.3,
       "unemploymentSeries": [
         4.6,
-        4.6,
         4.5,
         4.5,
         4.6,
@@ -285,11 +284,12 @@ export default {
         4.4,
         4.3,
         4.3,
+        4.3,
         4.3
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 40,
       "overdoseSeries": [
@@ -326,7 +326,6 @@ export default {
       "suicideRate": 30.6,
       "homicideRate": 7.8,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -348,7 +347,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -418,7 +418,6 @@ export default {
       "unemployment": 4.9,
       "unemploymentSeries": [
         4,
-        4,
         4.1,
         4.2,
         4.2,
@@ -439,11 +438,12 @@ export default {
         4.9,
         4.9,
         4.9,
+        4.9,
         4.9
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 37,
       "overdoseSeries": [
@@ -480,7 +480,6 @@ export default {
       "suicideRate": 18.9,
       "homicideRate": 6.3,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -502,7 +501,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -569,9 +569,8 @@ export default {
       "ppVirtual": 0
     },
     "AR": {
-      "unemployment": 3.9,
+      "unemployment": 3.8,
       "unemploymentSeries": [
-        3.6,
         3.7,
         3.7,
         3.8,
@@ -593,11 +592,12 @@ export default {
         4.1,
         4,
         3.9,
-        3.9
+        3.9,
+        3.8
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 13,
       "overdoseSeries": [
@@ -634,7 +634,6 @@ export default {
       "suicideRate": 18.7,
       "homicideRate": 8.1,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -656,7 +655,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -723,9 +723,8 @@ export default {
       "ppVirtual": 0
     },
     "CA": {
-      "unemployment": 5.1,
+      "unemployment": 5,
       "unemploymentSeries": [
-        5.4,
         5.4,
         5.4,
         5.4,
@@ -747,11 +746,12 @@ export default {
         5.2,
         5.1,
         5.1,
-        5.1
+        5.1,
+        5
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 21,
       "overdoseSeries": [
@@ -788,7 +788,6 @@ export default {
       "suicideRate": 9.5,
       "homicideRate": 4.2,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -810,7 +809,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -877,9 +877,8 @@ export default {
       "ppVirtual": 5
     },
     "CO": {
-      "unemployment": 4.1,
+      "unemployment": 4.4,
       "unemploymentSeries": [
-        4.3,
         4.3,
         4.3,
         4.3,
@@ -901,11 +900,12 @@ export default {
         3.9,
         3.9,
         4,
-        4.1
+        4.1,
+        4.4
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 32,
       "overdoseSeries": [
@@ -942,7 +942,6 @@ export default {
       "suicideRate": 21.1,
       "homicideRate": 4.3,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -964,7 +963,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -1033,7 +1033,6 @@ export default {
     "CT": {
       "unemployment": 5.1,
       "unemploymentSeries": [
-        3.4,
         3.5,
         3.5,
         3.6,
@@ -1055,11 +1054,12 @@ export default {
         5.2,
         5.2,
         5.1,
+        5.1,
         5.1
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 22,
       "overdoseSeries": [
@@ -1096,7 +1096,6 @@ export default {
       "suicideRate": 9.2,
       "homicideRate": 2.7,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -1118,7 +1117,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -1187,7 +1187,6 @@ export default {
     "DE": {
       "unemployment": 4.6,
       "unemploymentSeries": [
-        3.9,
         4,
         4,
         4.1,
@@ -1209,11 +1208,12 @@ export default {
         4.9,
         4.8,
         4.7,
+        4.6,
         4.6
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 24,
       "overdoseSeries": [
@@ -1250,7 +1250,6 @@ export default {
       "suicideRate": 12.3,
       "homicideRate": 6.4,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -1272,7 +1271,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -1339,9 +1339,8 @@ export default {
       "ppVirtual": 0
     },
     "DC": {
-      "unemployment": 5.6,
+      "unemployment": 5.4,
       "unemploymentSeries": [
-        5.4,
         5.5,
         5.6,
         5.7,
@@ -1363,11 +1362,12 @@ export default {
         6,
         5.9,
         5.7,
-        5.6
+        5.6,
+        5.4
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 47,
       "overdoseSeries": [
@@ -1404,7 +1404,6 @@ export default {
       "suicideRate": 5.5,
       "homicideRate": 21.5,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -1426,7 +1425,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -1494,9 +1494,8 @@ export default {
       "ppVirtual": 1
     },
     "FL": {
-      "unemployment": 4.4,
+      "unemployment": 4.3,
       "unemploymentSeries": [
-        3.5,
         3.5,
         3.5,
         3.5,
@@ -1518,11 +1517,12 @@ export default {
         4.7,
         4.6,
         4.5,
-        4.4
+        4.4,
+        4.3
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 18,
       "overdoseSeries": [
@@ -1559,7 +1559,6 @@ export default {
       "suicideRate": 13.7,
       "homicideRate": 4.8,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -1581,7 +1580,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -1651,7 +1651,6 @@ export default {
     "GA": {
       "unemployment": 3.3,
       "unemploymentSeries": [
-        3.5,
         3.4,
         3.4,
         3.4,
@@ -1673,11 +1672,12 @@ export default {
         3.4,
         3.3,
         3.2,
+        3.2,
         3.3
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 14,
       "overdoseSeries": [
@@ -1714,7 +1714,6 @@ export default {
       "suicideRate": 14.1,
       "homicideRate": 8.7,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -1736,7 +1735,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -1806,7 +1806,6 @@ export default {
       "unemployment": 2.8,
       "unemploymentSeries": [
         2.7,
-        2.7,
         2.6,
         2.6,
         2.6,
@@ -1827,11 +1826,12 @@ export default {
         2.6,
         2.7,
         2.7,
+        2.8,
         2.8
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 20,
       "overdoseSeries": [
@@ -1868,7 +1868,6 @@ export default {
       "suicideRate": 13.9,
       "homicideRate": 2.5,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -1890,7 +1889,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -1957,10 +1957,9 @@ export default {
       "ppVirtual": 1
     },
     "ID": {
-      "unemployment": 3.6,
+      "unemployment": 3.7,
       "unemploymentSeries": [
         3.6,
-        3.6,
         3.7,
         3.7,
         3.7,
@@ -1981,11 +1980,12 @@ export default {
         3.7,
         3.6,
         3.6,
-        3.6
+        3.6,
+        3.7
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 14,
       "overdoseSeries": [
@@ -2022,7 +2022,6 @@ export default {
       "suicideRate": 20.2,
       "homicideRate": 1.6,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -2044,7 +2043,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -2111,9 +2111,8 @@ export default {
       "ppVirtual": 1
     },
     "IL": {
-      "unemployment": 4.6,
+      "unemployment": 4.5,
       "unemploymentSeries": [
-        4.9,
         4.8,
         4.8,
         4.7,
@@ -2135,11 +2134,12 @@ export default {
         5.1,
         4.9,
         4.7,
-        4.6
+        4.6,
+        4.5
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 15,
       "overdoseSeries": [
@@ -2176,7 +2176,6 @@ export default {
       "suicideRate": 10.9,
       "homicideRate": 7.9,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -2198,7 +2197,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -2268,7 +2268,6 @@ export default {
       "unemployment": 3.4,
       "unemploymentSeries": [
         4.1,
-        4.1,
         4,
         3.9,
         3.8,
@@ -2289,11 +2288,12 @@ export default {
         3.3,
         3.3,
         3.3,
+        3.4,
         3.4
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 17,
       "overdoseSeries": [
@@ -2330,7 +2330,6 @@ export default {
       "suicideRate": 16.7,
       "homicideRate": 6.5,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -2352,7 +2351,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -2419,9 +2419,8 @@ export default {
       "ppVirtual": 1
     },
     "IA": {
-      "unemployment": 3.2,
+      "unemployment": 3.3,
       "unemploymentSeries": [
-        3.4,
         3.5,
         3.5,
         3.5,
@@ -2443,11 +2442,12 @@ export default {
         3.2,
         3.2,
         3.2,
-        3.2
+        3.2,
+        3.3
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 11,
       "overdoseSeries": [
@@ -2484,7 +2484,6 @@ export default {
       "suicideRate": 15.7,
       "homicideRate": 2.8,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -2506,7 +2505,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -2573,10 +2573,9 @@ export default {
       "ppVirtual": 1
     },
     "KS": {
-      "unemployment": 3.8,
+      "unemployment": 3.9,
       "unemploymentSeries": [
         3.7,
-        3.7,
         3.8,
         3.8,
         3.8,
@@ -2597,11 +2596,12 @@ export default {
         3.8,
         3.8,
         3.8,
-        3.8
+        3.8,
+        3.9
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 16,
       "overdoseSeries": [
@@ -2638,7 +2638,6 @@ export default {
       "suicideRate": 18.3,
       "homicideRate": 4.8,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -2660,7 +2659,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -2727,11 +2727,10 @@ export default {
       "ppVirtual": 0
     },
     "KY": {
-      "unemployment": 4.7,
+      "unemployment": 4.6,
       "unemploymentSeries": [
         4.9,
         4.9,
-        4.9,
         4.8,
         4.8,
         4.7,
@@ -2751,11 +2750,12 @@ export default {
         4.7,
         4.7,
         4.7,
-        4.7
+        4.7,
+        4.6
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 22,
       "overdoseSeries": [
@@ -2792,7 +2792,6 @@ export default {
       "suicideRate": 18,
       "homicideRate": 6.4,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -2814,7 +2813,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -2881,9 +2881,8 @@ export default {
       "ppVirtual": 1
     },
     "LA": {
-      "unemployment": 4,
+      "unemployment": 3.9,
       "unemploymentSeries": [
-        4.5,
         4.4,
         4.4,
         4.3,
@@ -2905,11 +2904,12 @@ export default {
         4.4,
         4.4,
         4.2,
-        4
+        4,
+        3.9
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 25,
       "overdoseSeries": [
@@ -2946,7 +2946,6 @@ export default {
       "suicideRate": 13.5,
       "homicideRate": 14,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -2968,7 +2967,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -3038,7 +3038,6 @@ export default {
       "unemployment": 3.3,
       "unemploymentSeries": [
         3.2,
-        3.2,
         3.3,
         3.3,
         3.3,
@@ -3059,11 +3058,12 @@ export default {
         3.1,
         3.1,
         3.2,
+        3.3,
         3.3
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 25,
       "overdoseSeries": [
@@ -3100,7 +3100,6 @@ export default {
       "suicideRate": 16.8,
       "homicideRate": 2.5,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -3122,7 +3121,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -3189,9 +3189,8 @@ export default {
       "ppVirtual": 1
     },
     "MD": {
-      "unemployment": 3.9,
+      "unemployment": 3.8,
       "unemploymentSeries": [
-        3.3,
         3.4,
         3.4,
         3.5,
@@ -3213,11 +3212,12 @@ export default {
         4.3,
         4.2,
         4.1,
-        3.9
+        3.9,
+        3.8
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 21,
       "overdoseSeries": [
@@ -3254,7 +3254,6 @@ export default {
       "suicideRate": 9.7,
       "homicideRate": 8.5,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -3276,7 +3275,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -3343,9 +3343,8 @@ export default {
       "ppVirtual": 1
     },
     "MA": {
-      "unemployment": 4.3,
+      "unemployment": 4.2,
       "unemploymentSeries": [
-        4.1,
         4.1,
         4.1,
         4.2,
@@ -3367,11 +3366,12 @@ export default {
         4.4,
         4.4,
         4.3,
-        4.3
+        4.3,
+        4.2
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 19,
       "overdoseSeries": [
@@ -3408,7 +3408,6 @@ export default {
       "suicideRate": 7.8,
       "homicideRate": 2.2,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -3430,7 +3429,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -3499,7 +3499,6 @@ export default {
     "MI": {
       "unemployment": 5,
       "unemploymentSeries": [
-        5.1,
         5.2,
         5.3,
         5.3,
@@ -3520,12 +3519,13 @@ export default {
         5.1,
         5,
         4.9,
+        5,
         5,
         5
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 17,
       "overdoseSeries": [
@@ -3562,7 +3562,6 @@ export default {
       "suicideRate": 13.6,
       "homicideRate": 5.1,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -3584,7 +3583,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -3651,9 +3651,8 @@ export default {
       "ppVirtual": 1
     },
     "MN": {
-      "unemployment": 4.5,
+      "unemployment": 4.6,
       "unemploymentSeries": [
-        3.2,
         3.3,
         3.3,
         3.4,
@@ -3675,11 +3674,12 @@ export default {
         4.4,
         4.3,
         4.4,
-        4.5
+        4.5,
+        4.6
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 17,
       "overdoseSeries": [
@@ -3716,7 +3716,6 @@ export default {
       "suicideRate": 14,
       "homicideRate": 3.3,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -3738,7 +3737,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -3805,9 +3805,8 @@ export default {
       "ppVirtual": 1
     },
     "MS": {
-      "unemployment": 3.3,
+      "unemployment": 3.4,
       "unemploymentSeries": [
-        3.6,
         3.7,
         3.8,
         3.9,
@@ -3829,11 +3828,12 @@ export default {
         3.8,
         3.6,
         3.4,
-        3.3
+        3.3,
+        3.4
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 14,
       "overdoseSeries": [
@@ -3870,7 +3870,6 @@ export default {
       "suicideRate": 15.2,
       "homicideRate": 17.6,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -3892,7 +3891,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -3961,7 +3961,6 @@ export default {
     "MO": {
       "unemployment": 3.6,
       "unemploymentSeries": [
-        3.7,
         3.8,
         3.8,
         3.9,
@@ -3983,11 +3982,12 @@ export default {
         3.7,
         3.6,
         3.5,
+        3.6,
         3.6
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 19,
       "overdoseSeries": [
@@ -4024,7 +4024,6 @@ export default {
       "suicideRate": 18.2,
       "homicideRate": 9.1,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -4046,7 +4045,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -4118,7 +4118,6 @@ export default {
         2.9,
         2.9,
         2.9,
-        2.9,
         3,
         3.1,
         3.1,
@@ -4137,11 +4136,12 @@ export default {
         3.3,
         3.2,
         3.2,
+        3.1,
         3.1
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 15,
       "overdoseSeries": [
@@ -4178,7 +4178,6 @@ export default {
       "suicideRate": 25.7,
       "homicideRate": 3.9,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -4200,7 +4199,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -4267,10 +4267,9 @@ export default {
       "ppVirtual": 1
     },
     "NE": {
-      "unemployment": 2.9,
+      "unemployment": 2.8,
       "unemploymentSeries": [
         2.8,
-        2.8,
         2.9,
         2.9,
         2.9,
@@ -4291,11 +4290,12 @@ export default {
         2.9,
         2.9,
         2.9,
-        2.9
+        2.9,
+        2.8
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 8,
       "overdoseSeries": [
@@ -4332,7 +4332,6 @@ export default {
       "suicideRate": 15.9,
       "homicideRate": 3.2,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -4354,7 +4353,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -4423,7 +4423,6 @@ export default {
     "NV": {
       "unemployment": 4.7,
       "unemploymentSeries": [
-        5.5,
         5.4,
         5.4,
         5.4,
@@ -4445,11 +4444,12 @@ export default {
         5.1,
         5,
         4.8,
+        4.7,
         4.7
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 37,
       "overdoseSeries": [
@@ -4486,7 +4486,6 @@ export default {
       "suicideRate": 18.4,
       "homicideRate": 7,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -4508,7 +4507,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -4575,9 +4575,8 @@ export default {
       "ppVirtual": 0
     },
     "NH": {
-      "unemployment": 2.6,
+      "unemployment": 2.5,
       "unemploymentSeries": [
-        2.8,
         2.9,
         3,
         3,
@@ -4599,11 +4598,12 @@ export default {
         2.9,
         2.8,
         2.8,
-        2.6
+        2.6,
+        2.5
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 16,
       "overdoseSeries": [
@@ -4640,7 +4640,6 @@ export default {
       "suicideRate": 16.4,
       "homicideRate": 1.3,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -4662,7 +4661,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -4731,7 +4731,6 @@ export default {
     "NJ": {
       "unemployment": 4.2,
       "unemploymentSeries": [
-        4.7,
         4.8,
         4.8,
         4.9,
@@ -4753,11 +4752,12 @@ export default {
         4.5,
         4.4,
         4.3,
+        4.2,
         4.2
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 15,
       "overdoseSeries": [
@@ -4794,7 +4794,6 @@ export default {
       "suicideRate": 6.7,
       "homicideRate": 2.6,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -4816,7 +4815,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -4883,9 +4883,8 @@ export default {
       "ppVirtual": 1
     },
     "NM": {
-      "unemployment": 4.7,
+      "unemployment": 4.8,
       "unemploymentSeries": [
-        4.2,
         4.2,
         4.2,
         4.1,
@@ -4907,11 +4906,12 @@ export default {
         4.8,
         4.8,
         4.7,
-        4.7
+        4.7,
+        4.8
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 53,
       "overdoseSeries": [
@@ -4948,7 +4948,6 @@ export default {
       "suicideRate": 23.4,
       "homicideRate": 12.9,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -4970,7 +4969,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -5037,9 +5037,8 @@ export default {
       "ppVirtual": 1
     },
     "NY": {
-      "unemployment": 4.3,
+      "unemployment": 4.2,
       "unemploymentSeries": [
-        4.1,
         4.1,
         4.1,
         4.1,
@@ -5061,11 +5060,12 @@ export default {
         4.6,
         4.4,
         4.3,
-        4.3
+        4.3,
+        4.2
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 18,
       "overdoseSeries": [
@@ -5102,7 +5102,6 @@ export default {
       "suicideRate": 8.3,
       "homicideRate": 3.5,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -5124,7 +5123,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -5194,7 +5194,6 @@ export default {
       "unemployment": 3.4,
       "unemploymentSeries": [
         3.7,
-        3.7,
         3.8,
         3.8,
         3.8,
@@ -5215,11 +5214,12 @@ export default {
         3.6,
         3.6,
         3.5,
+        3.4,
         3.4
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 18,
       "overdoseSeries": [
@@ -5256,7 +5256,6 @@ export default {
       "suicideRate": 14.3,
       "homicideRate": 7,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -5278,7 +5277,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -5349,7 +5349,6 @@ export default {
       "unemploymentSeries": [
         2.5,
         2.5,
-        2.5,
         2.6,
         2.6,
         2.6,
@@ -5369,11 +5368,12 @@ export default {
         2.3,
         2.2,
         2.2,
+        2.2,
         2.2
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 13,
       "overdoseSeries": [
@@ -5410,7 +5410,6 @@ export default {
       "suicideRate": 18.1,
       "homicideRate": 2.4,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -5432,7 +5431,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -5502,7 +5502,6 @@ export default {
     "OH": {
       "unemployment": 3.4,
       "unemploymentSeries": [
-        4.6,
         4.7,
         4.8,
         4.8,
@@ -5524,11 +5523,12 @@ export default {
         3.6,
         3.4,
         3.3,
+        3.4,
         3.4
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 20,
       "overdoseSeries": [
@@ -5565,7 +5565,6 @@ export default {
       "suicideRate": 14.7,
       "homicideRate": 6.2,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -5587,7 +5586,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -5654,9 +5654,8 @@ export default {
       "ppVirtual": 2
     },
     "OK": {
-      "unemployment": 4.2,
+      "unemployment": 4.1,
       "unemploymentSeries": [
-        3.1,
         3.1,
         3.1,
         3.1,
@@ -5678,11 +5677,12 @@ export default {
         4.2,
         4.3,
         4.3,
-        4.2
+        4.2,
+        4.1
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 19,
       "overdoseSeries": [
@@ -5719,7 +5719,6 @@ export default {
       "suicideRate": 20,
       "homicideRate": 6.8,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -5741,7 +5740,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -5808,9 +5808,8 @@ export default {
       "ppVirtual": 0
     },
     "OR": {
-      "unemployment": 5,
+      "unemployment": 4.9,
       "unemploymentSeries": [
-        4.4,
         4.5,
         4.7,
         4.8,
@@ -5832,11 +5831,12 @@ export default {
         5.2,
         5.2,
         5.1,
-        5
+        5,
+        4.9
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 13,
       "overdoseSeries": [
@@ -5873,7 +5873,6 @@ export default {
       "suicideRate": 20.4,
       "homicideRate": 3.7,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -5895,7 +5894,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -5962,9 +5962,8 @@ export default {
       "ppVirtual": 2
     },
     "PA": {
-      "unemployment": 3.6,
+      "unemployment": 3.5,
       "unemploymentSeries": [
-        3.9,
         4,
         4,
         4.1,
@@ -5986,11 +5985,12 @@ export default {
         4.1,
         3.9,
         3.7,
-        3.6
+        3.6,
+        3.5
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 19,
       "overdoseSeries": [
@@ -6027,7 +6027,6 @@ export default {
       "suicideRate": 13.9,
       "homicideRate": 4.9,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -6049,7 +6048,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -6116,9 +6116,8 @@ export default {
       "ppVirtual": 3
     },
     "RI": {
-      "unemployment": 3.6,
+      "unemployment": 3.5,
       "unemploymentSeries": [
-        4.5,
         4.5,
         4.5,
         4.5,
@@ -6140,11 +6139,12 @@ export default {
         4.1,
         3.9,
         3.7,
-        3.6
+        3.6,
+        3.5
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 17,
       "overdoseSeries": [
@@ -6181,7 +6181,6 @@ export default {
       "suicideRate": 8.3,
       "homicideRate": 2.2,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -6203,7 +6202,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -6270,9 +6270,8 @@ export default {
       "ppVirtual": 1
     },
     "SC": {
-      "unemployment": 4,
+      "unemployment": 3.9,
       "unemploymentSeries": [
-        4.4,
         4.3,
         4.2,
         4.1,
@@ -6294,11 +6293,12 @@ export default {
         4.4,
         4.2,
         4.1,
-        4
+        4,
+        3.9
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 22,
       "overdoseSeries": [
@@ -6335,7 +6335,6 @@ export default {
       "suicideRate": 15.9,
       "homicideRate": 9.5,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -6357,7 +6356,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -6428,7 +6428,6 @@ export default {
       "unemploymentSeries": [
         1.9,
         1.9,
-        1.9,
         2,
         2,
         2,
@@ -6445,14 +6444,15 @@ export default {
         2.3,
         2.2,
         2.1,
+        2,
         2,
         2,
         2,
         2
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 9,
       "overdoseSeries": [
@@ -6489,7 +6489,6 @@ export default {
       "suicideRate": 22.8,
       "homicideRate": 6.2,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -6511,7 +6510,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -6581,7 +6581,6 @@ export default {
       "unemployment": 3.4,
       "unemploymentSeries": [
         3.6,
-        3.6,
         3.5,
         3.5,
         3.5,
@@ -6600,13 +6599,14 @@ export default {
         3.6,
         3.6,
         3.5,
+        3.4,
         3.4,
         3.4,
         3.4
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 28,
       "overdoseSeries": [
@@ -6643,7 +6643,6 @@ export default {
       "suicideRate": 17.2,
       "homicideRate": 9.2,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -6665,7 +6664,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -6735,7 +6735,6 @@ export default {
       "unemployment": 4.4,
       "unemploymentSeries": [
         4.2,
-        4.2,
         4.1,
         4.1,
         4.1,
@@ -6756,11 +6755,12 @@ export default {
         4.4,
         4.5,
         4.4,
+        4.4,
         4.4
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 15,
       "overdoseSeries": [
@@ -6797,7 +6797,6 @@ export default {
       "suicideRate": 14,
       "homicideRate": 5.7,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -6819,7 +6818,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -6888,7 +6888,6 @@ export default {
     "UT": {
       "unemployment": 3.5,
       "unemploymentSeries": [
-        3.4,
         3.3,
         3.3,
         3.3,
@@ -6909,12 +6908,13 @@ export default {
         3.7,
         3.6,
         3.6,
+        3.5,
         3.5,
         3.5
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 19,
       "overdoseSeries": [
@@ -6951,7 +6951,6 @@ export default {
       "suicideRate": 19.7,
       "homicideRate": 2.3,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -6973,7 +6972,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -7044,7 +7044,6 @@ export default {
       "unemploymentSeries": [
         2.5,
         2.5,
-        2.5,
         2.6,
         2.6,
         2.6,
@@ -7057,6 +7056,7 @@ export default {
         2.7,
         2.7,
         2.7,
+        2.6,
         2.6,
         2.6,
         2.6,
@@ -7067,8 +7067,8 @@ export default {
         2.6
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 24,
       "overdoseSeries": [
@@ -7105,7 +7105,6 @@ export default {
       "suicideRate": 18.2,
       "homicideRate": 3,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -7127,7 +7126,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -7198,7 +7198,6 @@ export default {
       "unemploymentSeries": [
         3.1,
         3.1,
-        3.1,
         3.2,
         3.2,
         3.3,
@@ -7218,11 +7217,12 @@ export default {
         3.8,
         3.7,
         3.6,
+        3.6,
         3.6
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 14,
       "overdoseSeries": [
@@ -7259,7 +7259,6 @@ export default {
       "suicideRate": 12.5,
       "homicideRate": 5.5,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -7281,7 +7280,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -7348,9 +7348,8 @@ export default {
       "ppVirtual": 2
     },
     "WA": {
-      "unemployment": 4.8,
+      "unemployment": 4.7,
       "unemploymentSeries": [
-        4.4,
         4.3,
         4.3,
         4.4,
@@ -7372,11 +7371,12 @@ export default {
         5.2,
         5,
         4.9,
-        4.8
+        4.8,
+        4.7
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 32,
       "overdoseSeries": [
@@ -7413,7 +7413,6 @@ export default {
       "suicideRate": 15,
       "homicideRate": 4.1,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -7435,7 +7434,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -7506,7 +7506,6 @@ export default {
       "unemploymentSeries": [
         3.9,
         3.9,
-        3.9,
         3.8,
         3.8,
         3.9,
@@ -7526,11 +7525,12 @@ export default {
         4.2,
         4.1,
         4,
+        4,
         4
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 34,
       "overdoseSeries": [
@@ -7567,7 +7567,6 @@ export default {
       "suicideRate": 16.2,
       "homicideRate": 4.4,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -7589,7 +7588,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -7656,9 +7656,8 @@ export default {
       "ppVirtual": 1
     },
     "WI": {
-      "unemployment": 3.2,
+      "unemployment": 3.3,
       "unemploymentSeries": [
-        3.1,
         3.1,
         3.2,
         3.3,
@@ -7680,11 +7679,12 @@ export default {
         3.3,
         3.3,
         3.2,
-        3.2
+        3.2,
+        3.3
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 16,
       "overdoseSeries": [
@@ -7721,7 +7721,6 @@ export default {
       "suicideRate": 14.2,
       "homicideRate": 4.6,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -7743,7 +7742,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
@@ -7810,11 +7810,10 @@ export default {
       "ppVirtual": 1
     },
     "WY": {
-      "unemployment": 3,
+      "unemployment": 3.1,
       "unemploymentSeries": [
         3.3,
         3.3,
-        3.3,
         3.2,
         3.2,
         3.2,
@@ -7834,11 +7833,12 @@ export default {
         3.2,
         3,
         3,
-        3
+        3,
+        3.1
       ],
       "unemploymentSpan": [
-        "Oct 2024",
-        "Sep 2026"
+        "Nov 2024",
+        "Oct 2026"
       ],
       "overdoseRate": 16,
       "overdoseSeries": [
@@ -7875,7 +7875,6 @@ export default {
       "suicideRate": 27.7,
       "homicideRate": 4,
       "unemploymentPeriods": [
-        "2024-10",
         "2024-11",
         "2024-12",
         "2025-01",
@@ -7897,7 +7896,8 @@ export default {
         "2026-06",
         "2026-07",
         "2026-08",
-        "2026-09"
+        "2026-09",
+        "2026-10"
       ],
       "overdosePeriods": [
         "2024-07",
